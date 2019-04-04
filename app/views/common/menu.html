@@ -1,0 +1,31 @@
+<div flex layout="column" class="menu-bar">
+ <md-content flex layout="row">
+    <a href="#!/"><div class="logo" id="logo-div"></div></a>
+    <md-nav-bar flex md-selected-nav-item="$ctrl.currentNav" hide-xs hide-sm hide-md>
+     <md-nav-item md-nav-href="#!/nosotros" name="nosotros">Nosotros</md-nav-item>
+     <md-nav-item md-nav-href="#!/servicios" name="servicios">Servicios</md-nav-item>
+     <md-nav-item md-nav-href="#!/portafolio" name="portafolio">Portafolio</md-nav-item>
+     <md-nav-item md-nav-href="#!/contacto" name="contacto">Contacto</md-nav-item>
+   </md-nav-bar>
+   <md-nav-bar flex show-xs hide-lg hide-md>
+     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="icon fa-bars sidemenu">
+     </md-button>
+   </md-nav-bar>
+</md-content>
+
+
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+  <md-content layout-padding>
+    <ul class="ul-side">
+        <li><a href="#!/" ng-click="$ctrl.menuClicked()">Inicio</a></li>
+        <li><a href="#!/nosotros" ng-click="$ctrl.menuClicked()">Nosotros</a></li>
+        <li><a href="#!/servicios" ng-click="$ctrl.menuClicked()">Servicios</a></li>
+        <li><a href="#!/portafolio" ng-click="$ctrl.menuClicked()">Portafolio</a></li>
+        <li><a href="#!/contacto" ng-click="$ctrl.menuClicked()">Contacto</a></li>
+    </ul>
+      <!-- <md-button ng-click="close()" class="md-primary">
+      Close Sidenav Right
+    </md-button>-->
+  </md-content>
+</md-sidenav>
+</div>

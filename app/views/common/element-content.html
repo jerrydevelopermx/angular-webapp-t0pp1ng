@@ -1,0 +1,44 @@
+<div ng-repeat="c in $ctrl.data.content" ng-class="{'centered': $ctrl.data.centered }">
+  <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
+  <p ng-if="c.elementType === 'p'" class="{{c.class}}">{{c.text}}</p>
+  <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+  <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
+    <li ng-repeat="l in c.list"><a class="{{l.class}}" href="{{l.url}}">{{l.label}}</a></li>
+  </ul>
+  <ul ng-if="c.elementType === 'ul-icons'" class="{{c.class}}">
+    <li ng-repeat="l in c.list"><a href="{{l.url}}"><i class="{{l.class}}">&nbsp;</i>{{l.label}}</a></li>
+  </ul>
+  <md-card ng-if="c.elementType === 'card'"  md-theme="default" md-theme-watch>
+        <md-card-title ng-if="c.title!=null">
+          <md-card-title-text>
+            {{c.title}}
+            <!--<span class="md-headline">Card with image</span>-->
+            <!--<span class="md-subhead">Small</span>-->
+          </md-card-title-text>
+          <!--
+          <md-card-title-media>
+            <div class="md-media-sm card-media"></div>
+          </md-card-title-media>-->
+        </md-card-title>
+        <md-card-content >
+          <p ng-if="c.type!='blockquote'">
+            {{c.text}}
+          </p>
+          <blockquote ng-if="c.type=='blockquote'">
+            <p>
+              {{c.text}}
+            </p>
+          </blockquote>
+          <div class="author" ng-if="c.type=='blockquote'">
+							<div class="image">
+								<img src="images/{{c.author.image}}" alt="" />
+							</div>
+							<p class="credit">- <strong>{{c.author.name}}</strong> <span>{{c.author.position}}</span></p>
+					</div>
+        <!--<md-card-actions layout="row" layout-align="end center">
+          <md-button>Action 1</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>-->
+  </md-card>
+  <div id="{{c.id}}" class="{{c.id}}" ng-if="c.elementType === 'component'"></div>
+</div>

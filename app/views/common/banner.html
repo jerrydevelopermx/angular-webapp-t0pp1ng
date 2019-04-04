@@ -1,0 +1,12 @@
+<section id="banner">
+  <div class="inner">
+
+    <p>CREEMOS - CREAMOS - CRECEMOS </p>
+
+  </div>
+
+  <video ng-if="$ctrl.config.type=='video'" autoplay loop autobuffer muted playsinline>
+    <source src="images/Topping_1.mp4" type="video/mp4">
+  </video>
+  <img ng-if="$ctrl.config.type=='image'" src="images/banner2.jpg">
+</section>

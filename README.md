@@ -1,1 +1,10 @@
-# angular-webapp-t0pp1ng
+# angular-web-app
+
+## Installation
+
+npm install
+
+## Execution
+npm start 
+
+---- STUDIO BLACK JEANS ----
