@@ -1,9 +1,11 @@
-<div flex layout="column" class="content-column">
-  <banner-comp></banner-comp>
+<div flex layout="column">
+  <div class="image">
+    <img src="images/banner4.png" width="100%">
+  </div>
 
 
-<div flex layout="column" class="content-column blue-background" layout-md="column" layout-xs="column">
-  <h2>Contáctanos</h2>
+<div flex layout="column" class="content-column" layout-md="column" layout-xs="column">
+  <h2>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h2>
   <div layout="column" layout-align="center center">
     <div flex>
       <form action="#">
@@ -12,11 +14,19 @@
                   <input name="name" id="name" value="" placeholder="Nombre" type="text">
                 </div>
                 <div flex="70" >
-                  <input name="email" id="email" value="" placeholder="Email" type="email">
+                  <input name="email" id="email" value="" placeholder="Correo" type="email">
+                </div>
+          </div>
+          <div flex layout="row" layout-md="column" layout-xs="column" layout-margin layout-fill>
+               <div flex="70" >
+                  <input name="state" id="name" value="" placeholder="Estado" type="text">
+                </div>
+                <div flex="70" >
+                  <input name="email" id="email" value="" placeholder="Ciudad" type="text">
                 </div>
           </div>
           <div flex layout="column" layout-fill layout-margin>
-               <textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea>
+               <textarea name="message" id="message" placeholder="¿Cuál es tu necesidad?" rows="6"></textarea>
           </div>
           <div layout="row" layout-align="center center" layout-padding layout-margin>
             <ul class="actions">

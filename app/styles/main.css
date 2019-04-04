@@ -83,6 +83,11 @@ body:after {
     h4.grid-title  {
       font-size: 16px;
     }
+
+
+    .logo-footer {
+      width: 250px
+    }
 }
 
 
@@ -154,6 +159,11 @@ body:after {
     }
     h4.grid-title  {
       font-size: 14px;
+    }
+
+
+    .logo-footer {
+      width: 150px
     }
 }
 
@@ -356,9 +366,6 @@ ul.footer-list a:hover {
   text-decoration: underline;
 }
 
-.logo-footer {
-  width: 250px
-}
 
 /* CTA */
 #cta {
@@ -898,7 +905,8 @@ ul.footer-list a:hover {
     #banner {
       height: auto !important;
       min-height: 0;
-      padding: 4rem 2rem 4rem 2rem; }
+      /*padding: 4rem 2rem 4rem 2rem; */
+    }
       #banner .inner {
         width: 100%; }
       #banner h1 {
