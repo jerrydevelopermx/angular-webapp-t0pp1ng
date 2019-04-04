@@ -21,6 +21,9 @@
           </md-card-title-media>-->
         </md-card-title>
         <md-card-content >
+          <div ng-if="c.type=='imageContent'">
+            <img src="images/{{c.image}}" alt="" class=""/>
+          </div>
           <p ng-if="c.type!='blockquote'">
             {{c.text}}
           </p>
@@ -29,9 +32,9 @@
               {{c.text}}
             </p>
           </blockquote>
-          <div class="author" ng-if="c.type=='blockquote'">
-							<div class="image">
-								<img src="images/{{c.author.image}}" alt="" />
+          <div ng-if="c.type=='blockquote'">
+							<div >
+								<img src="images/{{c.author.image}}" alt="" class="author"/>
 							</div>
 							<p class="credit">- <strong>{{c.author.name}}</strong> <span>{{c.author.position}}</span></p>
 					</div>

@@ -50,7 +50,7 @@
                                           },
                                           {
                                             label:'Contacto',
-                                            url:'#!/'
+                                            url:'#!/contacto'
                                           }]
                                 }]
                       },
@@ -64,16 +64,12 @@
                                     class: 'plain',
                                     list: [
                                             {
-                                              url: 'https://twitter.com/DaenCopiadoras',
+                                              url: 'https://www.facebook.com/ToppingCreativo.com.mx/',
                                               label:'Facebook',
                                               class: 'icon fa-facebook'
-                                            },{
-                                              url:'https://www.facebook.com/DAEN-SA-De-CV-364636657018087/',
-                                              label: 'Twitter',
-                                              class:'icon fa-twitter'
                                             },
                                             {
-                                              url: 'https://instagram.com/',
+                                              url: 'https://instagram.com/toppingcreativomx',
                                               label:'Instagram',
                                               class: 'icon fa-instagram'
                                             }

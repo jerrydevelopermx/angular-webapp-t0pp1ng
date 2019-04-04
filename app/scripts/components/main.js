@@ -59,7 +59,7 @@
                            elementType: 'card',
                            src: 'images/nosotros-img-02.png',
                            title: 'ESTUDIO DE MERCADO',
-                           text: 'Desarrollamos un estudio enfocado a los objetivos de tu empresa, analizamos e investigamos los datos necesarios para crear tu estrategia e ir más allá de lo que ves. ',
+                           text: 'Desarrollamos un estudio enfocado a los objetivos de tu empresa, analizamos e investigamos los datos necesarios para crear tu estrategia. ',
                            class: ''
                          }]
                        },
@@ -104,7 +104,7 @@
           vm.testimonios = {
                       class: 'content-column',
                       title: {
-                        text: 'Testimonios',
+                        text: 'Casos de éxito',
                         class: ''
                       },
                       description: null,

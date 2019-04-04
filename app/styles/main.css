@@ -86,7 +86,15 @@ body:after {
 
 
     .logo-footer {
-      width: 250px
+      width: 250px;
+    }
+
+    .column-image {
+      width: 500px;
+    }
+
+    .clientes-img{
+      width: 100%;
     }
 }
 
@@ -161,9 +169,14 @@ body:after {
       font-size: 14px;
     }
 
-
     .logo-footer {
       width: 150px
+    }
+    .column-image {
+      width: 350px;
+    }
+    .clientes-img{
+      width: 350px;
     }
 }
 
@@ -245,15 +258,21 @@ div.background-nosotros{
 }
 
 .footer ul {
-  background: #111111;
+  background: #000;
   color: #666f77;
 }
 .black-background{
-  background: #111111;
+  background: #000;
 }
 .footer-div{
   padding: 5px;
 }
+
+.author{
+	border-radius: 100%;
+	max-width: 90px;
+}
+/* - -------------------------------*/
 
 /* ICONS */
 a.icon {
@@ -372,7 +391,7 @@ ul.footer-list a:hover {
   background-color: #E5155F;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/new-york-748595_960_720.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
