@@ -16,7 +16,6 @@
 
 <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
   <md-content layout-padding>
-    {{$ctrl.currentNav}}
     <ul class="ul-side">
         <li><a href="#!/" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'home' || $ctrl.currentNav == ''}" ng-click="$ctrl.menuClicked()">Inicio</a></li>
         <li><a href="#!/nosotros" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'nosotros'}" ng-click="$ctrl.menuClicked()">Nosotros</a></li>

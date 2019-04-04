@@ -36,5 +36,11 @@ function routes ($stateProvider, $urlRouterProvider) {
                     url: '/servicios',
                     component: 'appServicios',
                     publicPage: true
+                })
+
+                .state('detalleServicio', {
+                    url: '/servicios/:div',
+                    component: 'appServicios',
+                    publicPage: true
                 });
 }

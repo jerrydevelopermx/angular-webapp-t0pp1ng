@@ -42,11 +42,11 @@
                                           },
                                           {
                                             label:'Nuestros servicios',
-                                            url:'#!/'
+                                            url:'#!/servicios'
                                           },
                                           {
                                             label:'Nuestros Clientes',
-                                            url:'#!/'
+                                            url:'#!/servicios/clientes'
                                           },
                                           {
                                             label:'Contacto',

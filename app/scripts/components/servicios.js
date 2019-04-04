@@ -14,7 +14,7 @@
         var vm = this;
 
         function anchorScroll(){
-          var newHash = ($stateParams.servicio) ? $stateParams.servicio + '-div': 'logo-div';
+          var newHash = ($stateParams.div) ? $stateParams.div + '-div': 'logo-div';
               if ($location.hash() !== newHash) {
                 // set the $location.hash to `newHash` and
                 // $anchorScroll will automatically scroll to it
@@ -98,23 +98,23 @@
                                          image:'not-found.png',
                                          class: ''
                                         }]
-                             }]
+                             },
+                             {
+                               title: '',
+                               class: 'content-column',
+                               centered: true,
+                               content: [{
+                                         elementType: 'card',
+                                         title: '',
+                                         type: 'imageContent',
+                                         text: 'ANIMACION DIGITAL',
+                                         image:'not-found.png',
+                                         class: ''
+                                        }]
+                            }]
                     },
                     {
                       columns: [{
-                        title: '',
-                        class: 'content-column',
-                        centered: true,
-                        content: [{
-                                  elementType: 'card',
-                                  title: '',
-                                  type: 'imageContent',
-                                  text: 'ANIMACION DIGITAL',
-                                  image:'not-found.png',
-                                  class: ''
-                                 }]
-                               },
-                               {
                                 title: '',
                                 class: 'content-column',
                                 centered: true,
@@ -139,35 +139,36 @@
                                          image:'not-found.png',
                                          class: ''
                                         }]
-                             }]
+                             },
+                             {
+                               title: '',
+                               class: 'content-column',
+                               centered: true,
+                               content: [{
+                                         elementType: 'card',
+                                         title: '',
+                                         type: 'imageContent',
+                                         text: 'CAMPAÑAS MAILING',
+                                         image:'not-found.png',
+                                         class: ''
+                                        }]
+                                      },
+                                      {
+                                       title: '',
+                                       class: 'content-column',
+                                       centered: true,
+                                       content: [{
+                                                 elementType: 'card',
+                                                 title: '',
+                                                 type: 'imageContent',
+                                                 text: 'ANALISIS DE TENDENCIAS',
+                                                 image:'not-found.png',
+                                                 class: ''
+                                                }]
+                                     }]
                     },
                     {
-                      columns: [{
-                        title: '',
-                        class: 'content-column',
-                        centered: true,
-                        content: [{
-                                  elementType: 'card',
-                                  title: '',
-                                  type: 'imageContent',
-                                  text: 'CAMPAÑAS MAILING',
-                                  image:'not-found.png',
-                                  class: ''
-                                 }]
-                               },
-                               {
-                                title: '',
-                                class: 'content-column',
-                                centered: true,
-                                content: [{
-                                          elementType: 'card',
-                                          title: '',
-                                          type: 'imageContent',
-                                          text: 'ANALISIS DE TENDENCIAS',
-                                          image:'not-found.png',
-                                          class: ''
-                                         }]
-                              },
+                      columns: [
                               {
                                title: '',
                                class: 'content-column',
@@ -180,35 +181,8 @@
                                          image:'not-found.png',
                                          class: ''
                                         }]
-                             }]
-                    },{
-                      columns: [{
-                        title: '',
-                        class: 'content-column',
-                        centered: true,
-                        content: [{
-                                  elementType: 'card',
-                                  title: '',
-                                  type: 'imageContent',
-                                  text: 'VIDEO CORPORATIVO',
-                                  image:'not-found.png',
-                                  class: ''
-                                 }]
-                               },
-                               {
-                                title: '',
-                                class: 'content-column',
-                                centered: true,
-                                content: [{
-                                          elementType: 'card',
-                                          title: '',
-                                          type: 'imageContent',
-                                          text: 'EDICIÓN DE AUDIO',
-                                          image:'not-found.png',
-                                          class: ''
-                                         }]
-                              },
-                              {
+                             },
+                             {
                                title: '',
                                class: 'content-column',
                                centered: true,
@@ -216,11 +190,37 @@
                                          elementType: 'card',
                                          title: '',
                                          type: 'imageContent',
-                                         text: 'ILUSTRACIÓN DIGITAL',
+                                         text: 'VIDEO CORPORATIVO',
                                          image:'not-found.png',
                                          class: ''
                                         }]
-                             }]
+                                      },
+                                      {
+                                       title: '',
+                                       class: 'content-column',
+                                       centered: true,
+                                       content: [{
+                                                 elementType: 'card',
+                                                 title: '',
+                                                 type: 'imageContent',
+                                                 text: 'EDICIÓN DE AUDIO',
+                                                 image:'not-found.png',
+                                                 class: ''
+                                                }]
+                                     },
+                                     {
+                                      title: '',
+                                      class: 'content-column',
+                                      centered: true,
+                                      content: [{
+                                                elementType: 'card',
+                                                title: '',
+                                                type: 'imageContent',
+                                                text: 'ILUSTRACIÓN DIGITAL',
+                                                image:'not-found.png',
+                                                class: ''
+                                               }]
+                                    }]
                     }
 
                   ],
@@ -229,6 +229,7 @@
 
                   vm.clientes = {
                     class: 'content-column',
+                    id:'clientes-div',
                     title: {
                       text: 'CLIENTES',
                       class: ''
