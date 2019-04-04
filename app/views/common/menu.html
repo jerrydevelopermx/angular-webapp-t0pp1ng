@@ -16,12 +16,13 @@
 
 <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
   <md-content layout-padding>
+    {{$ctrl.currentNav}}
     <ul class="ul-side">
-        <li><a href="#!/" ng-click="$ctrl.menuClicked()">Inicio</a></li>
-        <li><a href="#!/nosotros" ng-click="$ctrl.menuClicked()">Nosotros</a></li>
-        <li><a href="#!/servicios" ng-click="$ctrl.menuClicked()">Servicios</a></li>
-        <li><a href="#!/portafolio" ng-click="$ctrl.menuClicked()">Portafolio</a></li>
-        <li><a href="#!/contacto" ng-click="$ctrl.menuClicked()">Contacto</a></li>
+        <li><a href="#!/" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'home' || $ctrl.currentNav == ''}" ng-click="$ctrl.menuClicked()">Inicio</a></li>
+        <li><a href="#!/nosotros" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'nosotros'}" ng-click="$ctrl.menuClicked()">Nosotros</a></li>
+        <li><a href="#!/servicios" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'servicios'}" ng-click="$ctrl.menuClicked()">Servicios</a></li>
+        <li><a href="#!/portafolio" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'portafolio'}" ng-click="$ctrl.menuClicked()">Portafolio</a></li>
+        <li><a href="#!/contacto" ng-class="{'leftnavbar-selected': $ctrl.currentNav == 'contacto'}" ng-click="$ctrl.menuClicked()">Contacto</a></li>
     </ul>
       <!-- <md-button ng-click="close()" class="md-primary">
       Close Sidenav Right

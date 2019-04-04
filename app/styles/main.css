@@ -214,6 +214,11 @@ md-nav-bar .md-nav-bar {
       font-size: 28pt;
       float: right;
 }
+
+.leftnavbar-selected {
+  color: #E5155F !important;
+}
+
 .sidemenu.md-button{
   font-size: 28px;
 }
