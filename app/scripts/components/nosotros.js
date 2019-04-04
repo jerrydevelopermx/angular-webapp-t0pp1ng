@@ -48,7 +48,7 @@
                       centered: true,
                       content: [{
                                  elementType: 'img',
-                                 src: 'images/nosotros-img-01.png',
+                                 src: 'images/topping-rosa.png',
                                  class: 'column-image'
                                }]
                     }]
