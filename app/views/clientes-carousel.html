@@ -1,0 +1,35 @@
+<script type="text/ng-template" id="tpl.html">
+    <div class="logos-clientes-container">
+      <a href="#!/"><div class="logos-clientes logo-{{i.className}}" ></div></a>
+    </div>
+</script>
+<div flex layout="column" class="content-column">
+  <div class="subcontent-title-white">
+    <md-tabs md-center-tabs="true" class="partners-tabs" md-dynamic-height="true" md-border-bottom md-selected="$ctrl.tabSelectedIndex">
+        <md-tab>
+          <md-tab-label>
+            CLIENTES
+          </md-tab-label>
+          <md-tab-body>
+            <slick class="slider" settings="$ctrl.slickConfigClientes" ng-if="$ctrl.slickConfigLoaded">
+              <div class="" ng-repeat="i in $ctrl.clientes" ng-include="'tpl.html'"></div>
+            <!--<div style="border:1px solid; height:100%; margin:auto"><a href="#!/"><div class="logo-arumabin"></div></a></div>
+              <div style="border:1px solid; height:100%" ng-repeat="i in $ctrl.logos" style="padding: auto">
+                <img style="margin: 0 auto; display:block; float:none; border:1px dotted" src ="{{ i.src }}" width="200"/>
+              </div>-->
+            </slick>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            ASESORÍAS
+          </md-tab-label>
+          <md-tab-body>
+            <slick class="slider" settings="$ctrl.slickConfigAsesorias" ng-if="$ctrl.slickConfigLoaded">
+              <div class="" ng-repeat="i in $ctrl.asesorias" ng-include="'tpl.html'"></div>
+            </slick>
+          </md-tab-body>
+        </md-tab>
+    </md-tabs>
+  </div>
+</div>

@@ -14,7 +14,8 @@ angular
       'ngMaterial',
       'ngMessages',
       'nemLogging',
-      'ui.carousel'
+      'ngSanitize',
+      'slickCarousel'
   ])
 
 /*

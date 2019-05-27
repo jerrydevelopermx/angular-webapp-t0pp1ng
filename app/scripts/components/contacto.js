@@ -20,20 +20,12 @@
             title: null,
             description: null,
             columns: [{
-                      title: 'Información de contacto',
+                      title: 'Visítanos en',
                       class: 'content-column',
                       centered: true,
                       content: [{
                           elementType: 'p',
-                          text: 'Dirección: 4 NORTE 608 COLONIA CENTRO PUEBLA, PUEBLA MÉXICO C.P. 72000'
-                      },
-                      {
-                          elementType: 'p',
-                          text: 'Teléfono: 01(222)4049195'
-                      },
-                      {
-                          elementType: 'p',
-                          text: 'E-mail: contacto@daencopiadoras.com.mx'
+                          text: '5 SUR 2901 A INTERIOR 4 COLONIA CHULAVISTA, PUEBLA, PUE.'
                       }]
                     }]
           };

@@ -8,7 +8,7 @@
   <ul ng-if="c.elementType === 'ul-icons'" class="{{c.class}}">
     <li ng-repeat="l in c.list"><a href="{{l.url}}"><i class="{{l.class}}">&nbsp;</i>{{l.label}}</a></li>
   </ul>
-  <md-card ng-if="c.elementType === 'card'"  md-theme="default" md-theme-watch>
+  <md-card ng-if="c.elementType === 'card'"  md-theme="default" md-theme-watch class="{{c.elementClass}}">
         <md-card-title ng-if="c.title!=null">
           <md-card-title-text>
             {{c.title}}
@@ -20,24 +20,41 @@
             <div class="md-media-sm card-media"></div>
           </md-card-title-media>-->
         </md-card-title>
-        <md-card-content >
+        <md-card-content class="{{c.cardContentClass}}">
+
           <div ng-if="c.type=='imageContent'">
-            <img src="images/{{c.image}}" alt="" class=""/>
+            <img src="images/{{c.image}}" alt="" class="{{c.class}}"/>
           </div>
-          <p ng-if="c.type!='blockquote'">
+          <p ng-if="c.type=='imageContent'">
             {{c.text}}
           </p>
+
           <blockquote ng-if="c.type=='blockquote'">
             <p>
               {{c.text}}
             </p>
           </blockquote>
           <div ng-if="c.type=='blockquote'">
-							<div >
+							<div ng-if="c.author.image">
 								<img src="images/{{c.author.image}}" alt="" class="author"/>
 							</div>
 							<p class="credit">- <strong>{{c.author.name}}</strong> <span>{{c.author.position}}</span></p>
 					</div>
+
+          <div ng-if="c.type=='profile'">
+            <p class="profile-card">- <strong>{{c.author.name}}</strong></p>
+            <p><span>{{c.author.position}}</span></p>
+            <p>
+              {{c.text}}
+            </p>
+            <div ng-if="c.author.image" style="text-align: center">
+              <img src="images/{{c.author.image}}" alt="" class="author"/>
+            </div>
+          </div>
+
+
+
+          </md-card-content>
         <!--<md-card-actions layout="row" layout-align="end center">
           <md-button>Action 1</md-button>
           <md-button>Action 2</md-button>

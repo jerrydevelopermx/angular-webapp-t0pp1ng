@@ -1,14 +1,9 @@
 <div>
-  <!--<banner-comp></banner-comp>-->
-  <div class="image">
-    <img src="images/banner2.jpg" width="100%">
+  <div class="banner-container">
+    <img src="images/banners/banner-nosotros.png" width="100%">
+    <div class="banner-text">NOSOTROS</div>
   </div>
   <app-n-cols data="$ctrl.compromiso"></app-n-cols>
-  <section id="cta" class="wrapper">
-    <div class="inner">
-      <h2>ALGO CHIDO AQUI</h2>
-    </div>
-
-  </section>
+  <strip-content data="$ctrl.stripSomos"></strip-content>
   <app-n-cols-rows data="$ctrl.equipo"></app-n-cols-rows>
 </div>

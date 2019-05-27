@@ -1,12 +1,26 @@
 <div flex layout="column">
-  <div class="image">
-    <img src="images/banner4.png" width="100%">
+  <div class="banner-container">
+    <img src="images/banners/banner-contacto.png" width="100%">
+    <div class="banner-text">ARMEMOS UN PLAN</div>
   </div>
 
 
 <div flex layout="column" class="content-column" layout-md="column" layout-xs="column">
-  <h2>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h2>
+  <div flex layout="row" layout-md="column" layout-xs="column">
+    <div flex layout="column" layout-align="center center" class="content-column" ng-repeat="column in $ctrl.contacto.columns">
+      <h4>{{column.title}}</h4>
+      <element-content data="column"></element-content>
+    </div>
+    <div  flex layout="row" layout-align="center center" class="content-column">
+      <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.8281363655003!2d-98.20912213869207!3d19.034862202730007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0c67816c08b%3A0xca1953589f48f92!2sCalle+5+Sur+2901%2C+Insurgentes+Centro%2C+Puebla%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1557974547226!5m2!1ses-419!2smx"
+        class="map-iframe" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
   <div layout="column" layout-align="center center">
+    <h2>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h2>
     <div flex>
       <form action="#">
           <div flex layout="row" layout-md="column" layout-xs="column" layout-margin layout-fill>
@@ -36,6 +50,5 @@
         </form>
       </div>
     </div>
-</div>
-
+  </div>
 </div>

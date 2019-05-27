@@ -33,14 +33,14 @@
             title: null,
             description: null,
             columns: [{
-                      title: 'Espacio resaltador de la marca El pasaje estándar Lorem Ipsum, usado desde el año 1500.',
+                      title: '',
                       class: 'content-column',
                       centered: true,
                       content: [{
-                          elementType: 'p',
-                          class: 'justified',
-                          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis'
-                      }]
+                                 elementType: 'img',
+                                 src: 'images/img_nosotros.png',
+                                 class: 'column-image'
+                               }]
                     },
                     {
                       title: '',
@@ -54,79 +54,72 @@
                     }]
           };
 
+          vm.stripSomos = {
+            title: '',
+            class: 'strip-somos',
+            content:  '<p>SOMOS UNA AGENCIA QUE TRABAJA BAJO LA VISIÓN DE NEGOCIO, CREATIVA Y HUMANA.</p>'
+          };
+
           vm.equipo = {
                       class: 'content-column',
                       title: {
                         text: 'Conoce a tu equipo',
-                        class: ''
+                        class: 'bebas-content'
                       },
-                      description: null,
+                      description: {
+                        text: '<span>JÓVENES, PROFESIONALES, EMPRENDEDORES, DIVERTIDOS,</span><span> GENIOS, MILLONARIOS, PLAYBOYS Y FILÁNTROPOS </span>',
+                        class: 'subcontent-title justified'
+                      },
                     rows: [{
                       columns: [{
                           title: '',
                           class: 'content-column',
-                          centered: true,
+                          centered: false,
                           content: [{
                               elementType: 'card',
+                              cardContentClass: 'perfil-card',
                               class: 'justified',
-                              type:'blockquote',
+                              type:'profile',
                               author: {
-                                name: 'Jane Doe',
+                                name: 'Omar Villaseñor',
                                 image: 'pic01.jpg',
-                                position: 'CEO - ABC Inc.'
+                                position: 'Director Creativo'
                               },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
+                              text: 'Comunicólogo. Con experiencia en publicidad, marketing, periodismo y  creación de contenidos. Escritor, cinéfilo, melómano y tenista de ocasión.'
                           }]
                       },
                       {
                           title: '',
                           class: 'content-column',
-                          centered: true,
+                          centered: false,
                           content: [{
                               elementType: 'card',
+                              cardContentClass: 'perfil-card',
                               class: 'justified',
-                              type:'blockquote',
+                              type:'profile',
                               author: {
-                                name: 'John Doe',
-                                image: 'pic03.jpg',
-                                position: 'CEO - ABC Inc.'
+                                name: 'Gabriela Sánchez',
+                                image: 'pic01.jpg',
+                                position: 'Directora de marketing y estrategia'
                               },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
-
+                              text: 'Mercadóloga. Con experiencia en investigación de mercados, marketing y propuestas de valor. Bailarina, apasionada de los animales y los viajes.'
                           }]
                       },
                       {
                           title: '',
                           class: 'content-column',
-                          centered: true,
+                          centered: false,
                           content: [{
                               elementType: 'card',
+                              cardContentClass: 'perfil-card',
                               class: 'justified',
-                              type:'blockquote',
+                              type:'profile',
                               author: {
-                                name: 'Janeth Smith',
-                                image: 'pic02.jpg',
-                                position: 'CEO - ABC Inc.'
+                                name: 'Angélica García',
+                                image: 'pic01.jpg',
+                                position: 'Directora de contenidos'
                               },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
-
-                          }]
-                      },
-                      {
-                          title: '',
-                          class: 'content-column',
-                          centered: true,
-                          content: [{
-                              elementType: 'card',
-                              class: 'justified',
-                              type:'blockquote',
-                              author: {
-                                name: 'Janeth Smith',
-                                image: 'pic02.jpg',
-                                position: 'CEO - ABC Inc.'
-                              },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
-
+                              text: 'Mercadóloga. Con amplitud en community management, estrategia digital e investigación de mercados.  Escritora, amante de la naturaleza y aprendiz de la guitarra acústica.'
                           }]
                       }]
                     },
@@ -134,69 +127,95 @@
                       columns: [{
                           title: '',
                           class: 'content-column',
-                          centered: true,
+                          centered: false,
                           content: [{
                               elementType: 'card',
+                              cardContentClass: 'perfil-card',
                               class: 'justified',
-                              type:'blockquote',
+                              type:'profile',
                               author: {
-                                name: 'Jane Doe',
+                                name: 'Samuel García',
                                 image: 'pic01.jpg',
-                                position: 'CEO - ABC Inc.'
+                                position: 'Director de arte'
                               },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
+                              text: 'Diseñador gráfico. Con desarrollo en branding, fotografía, edición digital de imagen, lettering y creación de contenidos.'
+                          }]
+                      },
+                      {
+                          title: '',
+                          class: 'content-column',
+                          centered: false,
+                          content: [{
+                              elementType: 'card',
+                              cardContentClass: 'perfil-card',
+                              class: 'justified',
+                              type:'profile',
+                              author: {
+                                name: 'Sandra Herrera',
+                                image: 'pic01.jpg',
+                                position: 'Directora de imagen y relaciones públicas'
+                              },
+                              text: 'Diseñadora gráfica. Especialista en relaciones públicas e imagen personal. Romántica, alegre y entregada a las actividades altruistas.'
+                          }]
+                      },
+                      {
+                          title: '',
+                          class: 'content-column',
+                          centered: false,
+                          content: [{
+                              elementType: 'card',
+                              cardContentClass: 'perfil-card',
+                              class: 'justified',
+                              type:'profile',
+                              author: {
+                                name: 'Gerardo García',
+                                image: 'pic01.jpg',
+                                position: 'Desarrollo web'
+                              },
+                              text: 'Comunicólogo. Con experiencia en publicidad, marketing, periodismo y  creación de contenidos. Escritor, cinéfilo, melómano y tenista de ocasión. '
+                          }]
+                      }]
+                    },
+                    {
+                      columns: [{
+                          title: '',
+                          class: 'content-column',
+                          centered: false,
+                          content: [{
+                              elementType: 'card',
+                              cardContentClass: 'perfil-card',
+                              class: 'justified',
+                              type:'profile',
+                              author: {
+                                name: 'Krissel Ríos',
+                                image: 'pic01.jpg',
+                                position: 'Arte'
+                              },
+                              text: 'Animadora digital. Gusto por la edición de sonido y fotografía. Fan del cine animado y live action.'
+                          }]
+                      },
+                      {
+                          title: '',
+                          class: 'content-column',
+                          centered: false,
+                          content: [{
+                              elementType: 'card',
+                              cardContentClass: 'perfil-card',
+                              class: 'justified',
+                              type:'profile',
+                              author: {
+                                name: 'Daniel Vasquez',
+                                image: 'pic01.jpg',
+                                position: 'Arte'
+                              },
+                              text: 'Animador digital. Con experiencia en animación 2D y motion graphics. Aficionado del cine animado y la ilustración.'
                           }]
                       },
                       {
                           title: '',
                           class: 'content-column',
                           centered: true,
-                          content: [{
-                              elementType: 'card',
-                              class: 'justified',
-                              type:'blockquote',
-                              author: {
-                                name: 'John Doe',
-                                image: 'pic03.jpg',
-                                position: 'CEO - ABC Inc.'
-                              },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
-
-                          }]
-                      },
-                      {
-                          title: '',
-                          class: 'content-column',
-                          centered: true,
-                          content: [{
-                              elementType: 'card',
-                              class: 'justified',
-                              type:'blockquote',
-                              author: {
-                                name: 'Janeth Smith',
-                                image: 'pic02.jpg',
-                                position: 'CEO - ABC Inc.'
-                              },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
-
-                          }]
-                      },
-                      {
-                          title: '',
-                          class: 'content-column',
-                          centered: true,
-                          content: [{
-                              elementType: 'card',
-                              class: 'justified',
-                              type:'blockquote',
-                              author: {
-                                name: 'Janeth Smith',
-                                image: 'pic02.jpg',
-                                position: 'CEO - ABC Inc.'
-                              },
-                              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  perspiciatis'
-
-                          }]
+                          content: []
                       }]
                     }
 

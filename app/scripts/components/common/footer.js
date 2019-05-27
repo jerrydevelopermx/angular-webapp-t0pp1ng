@@ -15,7 +15,7 @@
 
         vm.$onInit = function(){
           vm.footer = {
-            class: ' black-background',
+            class: ' black-background white-font',
             title: null,
             description: null,
             columns: [{
@@ -29,7 +29,7 @@
                                  class: 'logo-footer'
                                }]
                     },
-                    { title: '',
+                    { title: 'COMPAÑIA',
                       class: '',
                       titleClass:'centered',
                       centered: false,
@@ -44,10 +44,10 @@
                                             label:'Nuestros servicios',
                                             url:'#!/servicios'
                                           },
-                                          {
+                                          /*{
                                             label:'Nuestros Clientes',
-                                            url:'#!/servicios/clientes'
-                                          },
+                                            url:'#!/clientes'
+                                          },*/
                                           {
                                             label:'Contacto',
                                             url:'#!/contacto'
@@ -58,20 +58,36 @@
                         title: '¡Síguenos!',
                         titleClass:'centered',
                         class: '',
-                        centered: true,
+                        centered: false,
                         content: [{
                                     elementType: 'ul-icons',
                                     class: 'plain',
                                     list: [
                                             {
-                                              url: 'https://www.facebook.com/ToppingCreativo.com.mx/',
+                                              url: 'https://www.facebook.com/ToppingCreativo',
                                               label:'Facebook',
-                                              class: 'icon fa-facebook'
+                                              class: 'tp-fb'
                                             },
                                             {
                                               url: 'https://instagram.com/toppingcreativomx',
                                               label:'Instagram',
-                                              class: 'icon fa-instagram'
+                                              class: 'tp-instagram'
+                                            },
+                                            {
+                                              url: 'https://twitter.com/toppingcreativo/',
+                                              label:'Twitter',
+                                              class: 'tp-twitter'
+                                            },
+                                            {
+                                              url: 'https://www.linkedin.com/company/toppingcreativo',
+                                              label:'LinkedIn',
+                                              class: 'tp-linkedin'
+                                            },
+
+                                            {
+                                              url: ' http://vm.tiktok.com/d9DnoA',
+                                              label:'Tik Tok',
+                                              class: 'tp-tiktok'
                                             }
                                           ]
 
