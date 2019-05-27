@@ -241,6 +241,22 @@ body:after {
     .strip-content div {
       font-size: 30px;
     }
+    h2 {
+      font-size: 2.75em;
+      line-height: 1.5em;
+    }
+    .strip-content {
+      background-color: #E5155F;
+      color: rgba(255, 255, 255, 0.75);
+      background-attachment: fixed;
+      font-family: Bebas-Regular, sans-serif;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+      padding: 5em 0em 5em;
+    }
 }
 
 /*------------------------------ MEDIA MEDIUM ---------------------------------*/
@@ -402,6 +418,23 @@ body:after {
     }
     .card-element  {
       max-width: 320px
+    }
+    h2 {
+      font-size: 1.75em;
+      line-height: 1.5em;
+    }
+
+    .strip-content {
+      background-color: #E5155F;
+      color: rgba(255, 255, 255, 0.75);
+      background-attachment: fixed;
+      font-family: Bebas-Regular, sans-serif;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+      padding: 2em 0em 2em;
     }
 }
 
@@ -696,18 +729,7 @@ ul.footer-list a:hover {
 }
 /* CTA */
 
-.strip-content {
-  background-color: #E5155F;
-  color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed;
-  font-family: Bebas-Regular, sans-serif;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 4em 0em 8em;
-}
+
 
 .strip-content h2 {
   color: white !important;
