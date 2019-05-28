@@ -27,14 +27,16 @@
                     ];
           vm.asesorias = [
                       { className:'soniar-despierto'},
-                      { className:'travel'}
+                      { className:'travel'},
+                      { className:'pub-imagen'}
                     ];
 
           vm.slickConfigLoaded = true;
           vm.slickConfigClientes = {
+            autoplay: true,
             method: {},
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -66,17 +68,18 @@
           };
           vm.slickConfigAsesorias = {
             method: {},
+            autoplay: true,
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             responsive: [
               {
                 breakpoint: 1024,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
                   infinite: true,
                   dots: true
                 }

@@ -81,7 +81,7 @@
                                  cardContentClass: 'servicio-card',
                                  title: '',
                                  type: 'imageContent',
-                                 text: 'IMAGEN Y RELACIONES PUBLICAS',
+                                 text: 'IMAGEN Y RELACIONES PÚBLICAS',
                                  image:'iconos/imagen-rels-on.png',
                                  class: 'icon-servicios'
                                 }]
@@ -126,7 +126,7 @@
                           content: [{
                                     elementType: 'p',
                                     class: 'asesoria-content',
-                                    text: 'ASESORIA Y CONSULTORÍA'
+                                    text: 'ASESORÍA Y CONSULTORÍA'
                                   },
                                   {
                                     elementType: 'ul',

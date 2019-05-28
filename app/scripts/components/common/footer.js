@@ -29,7 +29,7 @@
                                  class: 'logo-footer'
                                }]
                     },
-                    { title: 'COMPAÑIA',
+                    { title: 'COMPAÑÍA',
                       class: '',
                       titleClass:'centered',
                       centered: false,

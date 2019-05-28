@@ -3,8 +3,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 @font-face {
-  font-family: 'Bebas-Regular';
-  src: URL('../fonts/Bebas-Regular.ttf') format('truetype');
+  font-family: 'BebasNeue';
+  src: URL('../fonts/BebasNeue.otf') format('opentype');
 }
 
 @font-face {
@@ -220,14 +220,19 @@ body:after {
     div.logo-travel:hover{
       content: url('../images/logos/travel.png');
     }
-
+    div.logo-pub-imagen{
+      content: url('../images/logos/pub-imagen-off.png');
+    }
+    div.logo-pub-imagen:hover{
+      content: url('../images/logos/pub-imagen.png');
+    }
     div.banner-container {
       position: relative;
       text-align: center;
       color: white;
-      font-size: 65px;
+      font-size: 105px;
       font-weight: bolder;
-      font-family: Bebas-Regular, sans-serif;
+      font-family: BebasNeue, sans-serif;
     }
 
     .map-iframe{
@@ -249,13 +254,19 @@ body:after {
       background-color: #E5155F;
       color: rgba(255, 255, 255, 0.75);
       background-attachment: fixed;
-      font-family: Bebas-Regular, sans-serif;
+      font-family: BebasNeue, sans-serif;
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
       z-index: 1;
       padding: 5em 0em 5em;
+    }
+
+    .map-container{
+      width: 600px;
+      height: 400px;
+      box-shadow: 16px 8px 10px 0 rgba(0,0,0,.4), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
     }
 }
 
@@ -396,11 +407,14 @@ body:after {
     div.logo-travel{
       content: url('../images/logos/travel.png');
     }
+    div.logo-pub-imagen{
+      content: url('../images/logos/pub-imagen.png');
+    }
     div.banner-container {
       position: relative;
       text-align: center;
       color: white;
-      font-size: 18px;
+      font-size: 30px;
       font-weight: bolder;
       font-family: bebas-neue, sans-serif;
     }
@@ -428,13 +442,19 @@ body:after {
       background-color: #E5155F;
       color: rgba(255, 255, 255, 0.75);
       background-attachment: fixed;
-      font-family: Bebas-Regular, sans-serif;
+      font-family: BebasNeue, sans-serif;
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
       z-index: 1;
       padding: 2em 0em 2em;
+    }
+
+    .map-container{
+      width: 300px;
+      height: 400px;
+      box-shadow: 16px 8px 10px 0 rgba(0,0,0,.4), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
     }
 }
 
@@ -527,7 +547,7 @@ md-card{
 }
 
 .md-tab {
-  font-family: Bebas-Regular, sans-serif;
+  font-family: BebasNeue, sans-serif;
   font-size: 35px;
 }
 
@@ -705,7 +725,7 @@ ul.footer-list a:hover {
 }
 
 .bebas-content{
-  font-family: Bebas-Regular, sans-serif;
+  font-family: BebasNeue, sans-serif;
 }
 .asesoria-content {
   margin-top: 40px;
@@ -722,11 +742,7 @@ ul.footer-list a:hover {
   margin-top: 15px;
 }
 
-.map-container{
-  width: 600px;
-  height: 400px;
-  box-shadow: 16px 8px 10px 0 rgba(0,0,0,.4), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
-}
+
 /* CTA */
 
 

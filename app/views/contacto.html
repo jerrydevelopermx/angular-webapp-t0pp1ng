@@ -8,7 +8,7 @@
 <div flex layout="column" class="content-column" layout-md="column" layout-xs="column">
   <div flex layout="row" layout-md="column" layout-xs="column">
     <div flex layout="column" layout-align="center center" class="content-column" ng-repeat="column in $ctrl.contacto.columns">
-      <h4>{{column.title}}</h4>
+      <h3>{{column.title}}</h3>
       <element-content data="column"></element-content>
     </div>
     <div  flex layout="row" layout-align="center center" class="content-column">
@@ -16,11 +16,11 @@
         class="map-iframe" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
+</div>
 
 
-
-  <div layout="column" layout-align="center center">
-    <h2>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h2>
+  <div layout="column" class="content-column" layout-align="center center">
+    <h4>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h4>
     <div flex>
       <form action="#">
           <div flex layout="row" layout-md="column" layout-xs="column" layout-margin layout-fill>
@@ -50,5 +50,5 @@
         </form>
       </div>
     </div>
-  </div>
+
 </div>
