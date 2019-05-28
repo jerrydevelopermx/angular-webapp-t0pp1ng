@@ -174,7 +174,7 @@
                                 image: 'pic01.jpg',
                                 position: 'Desarrollo web'
                               },
-                              text: 'Comunicólogo. Con experiencia en publicidad, marketing, periodismo y  creación de contenidos. Escritor, cinéfilo, melómano y tenista de ocasión. '
+                              text: 'Ing. en Sistemas. Desarrollador de Software, especializado en tecnologías Web. Amante de los deportes, los viajes, la guitarra y cualquier otro instrumento musical.'
                           }]
                       }]
                     },
