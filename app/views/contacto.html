@@ -5,7 +5,7 @@
   </div>
 
 
-<div flex layout="column" class="content-column" layout-md="column" layout-xs="column">
+<div flex layout="column"  layout-md="column" layout-xs="column" class="bebas-content">
   <div flex layout="row" layout-md="column" layout-xs="column">
     <div flex layout="column" layout-align="center center" class="content-column" ng-repeat="column in $ctrl.contacto.columns">
       <h3>{{column.title}}</h3>
@@ -19,15 +19,49 @@
 </div>
 
 
-  <div layout="column" class="content-column" layout-align="center center">
-    <h4>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h4>
-    <div flex>
-      <form action="#">
-          <div flex layout="row" layout-md="column" layout-xs="column" layout-margin layout-fill>
-               <div flex="70" >
+  <div flex layout="column" class="content-column bebas-content">
+    <h3>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h3>
+      <div flex layout="row" layout-md="column" layout-align="center center" layout-xs="column">
+        <div layout="row" flex="45" flex-xs="45" flex-md="50">
+          <input flex name="name" id="name" value="" placeholder="Nombre" type="text">
+        </div>
+      </div>
+      <div flex layout="row" layout-md="column" layout-align="center center" layout-xs="column">
+        <div layout="row" flex="45" flex-xs="45" flex-md="50">
+          <input flex name="email" id="email" value="" placeholder="Correo Electrónico" type="text">
+        </div>
+      </div>
+      <div flex layout="row" layout-md="column" layout-align="center center" layout-xs="column">
+        <div layout="row" flex="15" flex-xs="45" flex-md="50">
+          <input flex name="estado" id="email" value="" placeholder="Estado" type="text">
+        </div>
+        <div layout="row" flex="15" flex-xs="45" flex-md="50">
+          <input flex name="ciudad" id="email" value="" placeholder="Ciudad" type="text">
+        </div>
+        <div layout="row" flex="15" flex-xs="45" flex-md="50">
+          <input flexname="telefono" id="email" value="" placeholder="Teléfono" type="text">
+        </div>
+      </div>
+      <div flex layout="row" layout-md="column"layout-align="center center"  layout-xs="column">
+        <div layout="row" flex="45" flex-xs="45" flex-md="50">
+          <textarea  name="message" id="message" placeholder="¿Cuál es tu necesidad?" rows="6"></textarea>
+        </div>
+      </div>
+      <div layout="row" layout-align="center center" layout-padding layout-margin>
+        <ul class="actions">
+          <li><input value="Enviar" class="button medium" type="button"></li>
+          </ul>
+      </div>
+
+
+
+
+      <!--<form flex action="#">
+          <div flex layout="row" layout-md="column" layout-xs="column">
+               <div flex>
                   <input name="name" id="name" value="" placeholder="Nombre" type="text">
                 </div>
-                <div flex="70" >
+                <div flex>
                   <input name="email" id="email" value="" placeholder="Correo" type="email">
                 </div>
           </div>
@@ -40,15 +74,14 @@
                 </div>
           </div>
           <div flex layout="column" layout-fill layout-margin>
-               <textarea name="message" id="message" placeholder="¿Cuál es tu necesidad?" rows="6"></textarea>
+               <textarea flex name="message" id="message" placeholder="¿Cuál es tu necesidad?" rows="6"></textarea>
           </div>
           <div layout="row" layout-align="center center" layout-padding layout-margin>
             <ul class="actions">
               <li><input value="Enviar" class="button big" type="submit"></li>
               </ul>
           </div>
-        </form>
-      </div>
+        </form>-->
     </div>
 
 </div>

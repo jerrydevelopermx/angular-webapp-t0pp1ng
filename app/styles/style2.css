@@ -234,6 +234,7 @@
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		margin: 5px 18px;
 	}
 
 		input[type="text"]:invalid,

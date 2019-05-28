@@ -62,7 +62,7 @@ body:after {
     }
     .content-column {
       padding: 5px;
-      margin:5px;
+      margin:15px;
       /*border:1px solid;*/
     }
     div.logo{
@@ -296,7 +296,8 @@ body:after {
         font-size: 14pt;
     }
     .content-column {
-      margin-left:5px;
+      /*margin-left:5px;*/
+      margin:10px;
       /*border:1px solid;*/
     }
     div.logo{
@@ -420,7 +421,7 @@ body:after {
     }
     .map-iframe{
       width: 300px;
-      height: 275px;
+      height: 400px;
     }
 
     .ol-container {
