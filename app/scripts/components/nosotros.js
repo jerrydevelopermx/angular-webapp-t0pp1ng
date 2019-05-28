@@ -37,9 +37,8 @@
                       class: 'content-column',
                       centered: true,
                       content: [{
-                                 elementType: 'img',
-                                 src: 'images/img_nosotros.png',
-                                 class: 'column-image'
+                                 elementType: 'html',
+                                 html: '<div class="nosotros-content-div"><div class="nosotros-content-small">SOMOS UNA AGENCIA</div><div class="nosotros-content-medium"> DE CREATIVIDAD</div><div class="nosotros-content-big"> APLICADA</div></div>'
                                }]
                     },
                     {
@@ -57,7 +56,7 @@
           vm.stripSomos = {
             title: '',
             class: 'strip-somos',
-            content:  '<p>SOMOS UNA AGENCIA QUE TRABAJA BAJO LA VISIÓN DE NEGOCIO, CREATIVA Y HUMANA.</p>'
+            content:  '<p>SOMOS UNA AGENCIA QUE TRABAJA BAJO UNA VISIÓN DE NEGOCIO, CREATIVA Y HUMANA.</p>'
           };
 
           vm.equipo = {
@@ -67,7 +66,7 @@
                         class: 'bebas-content'
                       },
                       description: {
-                        text: '<span>JÓVENES, PROFESIONALES, EMPRENDEDORES, DIVERTIDOS,</span><span> GENIOS, MILLONARIOS, PLAYBOYS Y FILÁNTROPOS </span>',
+                        text: '<span class="pink-subtitle">JÓVENES, PROFESIONALES, EMPRENDEDORES, DIVERTIDOS,</span><span class="gray-subtitle"> GENIOS, MILLONARIOS, PLAYBOYS Y FILÁNTROPOS </span>',
                         class: 'subcontent-title justified'
                       },
                     rows: [{
@@ -83,7 +82,8 @@
                               author: {
                                 name: 'Omar Villaseñor',
                                 image: 'pic01.jpg',
-                                position: 'Director Creativo'
+                                position: 'Director Creativo',
+                                twitter: '@omarvzayas'
                               },
                               text: 'Comunicólogo. Con experiencia en publicidad, marketing, periodismo y  creación de contenidos. Escritor, cinéfilo, melómano y tenista de ocasión.'
                           }]
@@ -117,7 +117,8 @@
                               author: {
                                 name: 'Angélica García',
                                 image: 'pic01.jpg',
-                                position: 'Directora de contenidos'
+                                position: 'Directora de contenidos',
+                                twitter: '@aegahe'
                               },
                               text: 'Mercadóloga. Con amplitud en community management, estrategia digital e investigación de mercados.  Escritora, amante de la naturaleza y aprendiz de la guitarra acústica.'
                           }]
@@ -153,7 +154,8 @@
                               author: {
                                 name: 'Sandra Herrera',
                                 image: 'pic01.jpg',
-                                position: 'Directora de imagen y relaciones públicas'
+                                position: 'Directora de imagen y relaciones públicas',
+                                twitter: '@san.hm22'
                               },
                               text: 'Diseñadora gráfica. Especialista en relaciones públicas e imagen personal. Romántica, alegre y entregada a las actividades altruistas.'
                           }]

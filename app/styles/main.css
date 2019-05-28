@@ -268,6 +268,55 @@ body:after {
       height: 400px;
       box-shadow: 16px 8px 10px 0 rgba(0,0,0,.4), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
     }
+
+    .pink-subtitle {
+      color: #E5155F;
+      font-weight: bolder;
+      font-size: 38px;
+      text-align: center;
+    }
+
+    .gray-subtitle {
+      color:#aaa;
+      margin: 12px;
+      font-weight: bolder;
+      font-size: 39px;
+      text-align: center;
+    }
+    .author{
+    	border-radius: 100%;
+    	max-width: 120px;
+    }
+
+    .author-text {
+      margin:10px;
+      min-height: 150px;
+      text-align:justify;
+    }
+
+    .nosotros-content-div {
+      padding: 15% 0;
+    }
+    .nosotros-content-big{
+      font-size: 95px;
+      color: #E5155F;
+      font-weight: bolder;
+      margin:10px 0;
+    }
+
+    .nosotros-content-medium{
+      font-size: 65px;
+      color: black;
+      font-weight: bolder;
+      margin:45px 0;
+    }
+
+    .nosotros-content-small{
+      font-size: 55px;
+      color: #aaa;
+      font-weight: bolder;
+      margin:22px 0;
+    }
 }
 
 /*------------------------------ MEDIA MEDIUM ---------------------------------*/
@@ -457,6 +506,53 @@ body:after {
       height: 400px;
       box-shadow: 16px 8px 10px 0 rgba(0,0,0,.4), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
     }
+
+    .pink-subtitle {
+      color: #E5155F;
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .gray-subtitle {
+      color:#aaa;
+      margin: 9px;
+      font-weight: bolder;
+      font-size: 21px;
+      text-align: center;
+    }
+    .author{
+    	border-radius: 100%;
+    	max-width: 100px;
+    }
+    .author-text {
+      margin:10px;
+      height: 190px;
+    }
+
+    .nosotros-content-div {
+      padding: 15% 0;
+    }
+    .nosotros-content-big{
+      font-size: 65px;
+      color: #E5155F;
+      font-weight: bolder;
+      margin:15px 0;
+    }
+
+    .nosotros-content-medium{
+      font-size:37px;
+      color: black;
+      font-weight: bolder;
+      margin:8px 0;
+    }
+
+    .nosotros-content-small{
+      font-size: 28px;
+      color: #aaa;
+      font-weight: bolder;
+      margin:0px 0;
+    }
 }
 
 
@@ -467,7 +563,7 @@ md-card md-card-content.servicio-card  {
 }
 
 md-card md-card-content.perfil-card  {
-  min-height: 270px
+  min-height: 380px
 }
 .white-font {
   color: #fff;
@@ -608,10 +704,7 @@ div.background-nosotros{
   padding: 5px;
 }
 
-.author{
-	border-radius: 100%;
-	max-width: 90px;
-}
+
 /* - -------------------------------*/
 
 /* ICONS */
@@ -733,9 +826,10 @@ ul.footer-list a:hover {
   font-size: 40px;
 }
 
-.strip-nosotros p {
+.strip-somos p, .strip-nosotros p {
   text-align: center;
   margin: 0 30px;
+  font-size: 35px;
 }
 
 

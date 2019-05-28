@@ -1,4 +1,5 @@
 <div ng-repeat="c in $ctrl.data.content" ng-class="{'centered': $ctrl.data.centered }">
+  <div ng-if="c.elementType === 'html'" ng-bind-html="c.html"></div>
   <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
   <p ng-if="c.elementType === 'p'" class="{{c.class}}">{{c.text}}</p>
   <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
@@ -12,16 +13,9 @@
         <md-card-title ng-if="c.title!=null">
           <md-card-title-text>
             {{c.title}}
-            <!--<span class="md-headline">Card with image</span>-->
-            <!--<span class="md-subhead">Small</span>-->
           </md-card-title-text>
-          <!--
-          <md-card-title-media>
-            <div class="md-media-sm card-media"></div>
-          </md-card-title-media>-->
         </md-card-title>
         <md-card-content class="{{c.cardContentClass}}">
-
           <div ng-if="c.type=='imageContent'">
             <img src="images/{{c.image}}" alt="" class="{{c.class}}"/>
           </div>
@@ -42,23 +36,14 @@
 					</div>
 
           <div ng-if="c.type=='profile'">
-            <p class="profile-card">- <strong>{{c.author.name}}</strong></p>
-            <p><span>{{c.author.position}}</span></p>
-            <p>
-              {{c.text}}
-            </p>
+            <div><span><strong>{{c.author.name}}</strong></span><span style="float: right" ng-if="c.author.twitter"><img src="images/iconos/twitter-icon.png"/>{{c.author.twitter}}</span></div>
+            <p><span><strong>{{c.author.position}}</strong></span></p>
+            <p class="author-text">{{c.text}}</p>
             <div ng-if="c.author.image" style="text-align: center">
               <img src="images/{{c.author.image}}" alt="" class="author"/>
             </div>
           </div>
-
-
-
           </md-card-content>
-        <!--<md-card-actions layout="row" layout-align="end center">
-          <md-button>Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </md-card-actions>-->
   </md-card>
   <div id="{{c.id}}" class="{{c.id}}" ng-if="c.elementType === 'component'"></div>
 </div>
