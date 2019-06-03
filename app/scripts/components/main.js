@@ -94,7 +94,7 @@
                           class: 'actions centered',
                           list: [{
                                     label:'VER MÁS',
-                                    class:'button medium',
+                                    class:'button medium bebas-content',
                                     url:'#!/servicios'
                                 }]
 
