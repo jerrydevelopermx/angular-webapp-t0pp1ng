@@ -317,6 +317,84 @@ body:after {
       font-weight: bolder;
       margin:22px 0;
     }
+
+    /*  SERVICIOS bullets    */
+    .icon-servicios-bullets{
+      height:200px;
+    }
+    .list-wrapper {
+      position:relative;
+    }
+    .list-item-wrapper {
+      margin-top:10px;
+      position:relative;
+    }
+    .list-bullet {
+      float:left;
+      margin-top:2px;
+      margin-right:10px;
+      margin-left: 70px;
+      background:#E5155F;
+      height:17px;
+      width:17px;
+      line-height:30px;
+      border-radius:100px;
+      font-weight:700;
+      color:white;
+      text-align:center;
+    }
+    .list-bullet-init {
+      float:left;
+      margin-top:5px;
+      background:#E5155F;
+      height:20px;
+      width:20px;
+      line-height:30px;
+      border-radius:100px;
+      font-weight:700;
+      color:white;
+      text-align:center;
+      border: 1px solid;
+    }
+
+    .list-item {
+      display:table-row;
+      vertical-align:middle;
+    }
+    .list-title {
+        font-weight:700;
+    }
+    .list-title-first {
+      font-weight:700;
+      width:58px;
+      height: 15px;
+      border-bottom: 2px solid;
+      margin-right: 14px;
+      color: #E5155F
+    }
+    .list-text {
+        font-weight:400;
+    }
+    .pink-line {
+      background:#E5155F;
+      z-index:-1;
+      width:2px;
+      height:100%;
+      position:absolute;
+      left:78px;
+      margin-top: 25px;
+    }
+
+    .white-line {
+      background:#FFF;
+      z-index:-1;
+      top:2px;
+      width:2px;
+      height:140%;
+      position:absolute;
+      left:78px;
+      margin-bottom: 15px
+    }
 }
 
 /*------------------------------ MEDIA MEDIUM ---------------------------------*/
@@ -553,11 +631,98 @@ body:after {
       font-weight: bolder;
       margin:0px 0;
     }
+
+    /*  SERVICIOS bullets    */
+    .icon-servicios-bullets{
+      height: 100px;
+    }
+    .list-wrapper {
+      position:relative;
+    }
+    .list-item-wrapper {
+      margin-top:10px;
+      position:relative;
+    }
+    .list-bullet {
+      float:left;
+      margin-top:2px;
+      margin-right:10px;
+      margin-left: 35px;
+      background:#E5155F;
+      height:12px;
+      width:12px;
+      line-height:30px;
+      border-radius:100px;
+      font-weight:700;
+      color:white;
+      text-align:center;
+    }
+    .list-bullet-init {
+      float:left;
+      margin-top:5px;
+      background:#E5155F;
+      height:15px;
+      width:15px;
+      line-height:30px;
+      border-radius:100px;
+      font-weight:700;
+      color:white;
+      text-align:center;
+      border: 1px solid;
+    }
+
+    .list-item {
+      display:table-row;
+      vertical-align:middle;
+    }
+    .list-title {
+        font-weight:700;
+    }
+    .list-title-first {
+      font-weight:700;
+      width:58px;
+      height: 15px;
+      border-bottom: 1px solid;
+      margin-right: 14px;
+      color: #E5155F
+    }
+    .list-text {
+        font-weight:200;
+    }
+    .pink-line {
+      background:#E5155F;
+      z-index:-1;
+      width:1px;
+      height:100%;
+      position:absolute;
+      left:40px;
+      margin-top: 25px;
+    }
+
+    .white-line {
+      background:#FFF;
+      z-index:-1;
+      top:2px;
+      width:1px;
+      height:100%;
+      position:absolute;
+      left:40px;
+      margin-bottom: 15px
+    }
 }
 
+.servicios-group {
+  float: left;
+}
+ul.listServicios {
+  width: 350px;
+  list-style: circle;
+}
 
-
-
+.pink-content {
+  color: #E5155F;
+  font-weight: bolder;
+}
 md-card md-card-content.servicio-card  {
   min-height: 170px
 }

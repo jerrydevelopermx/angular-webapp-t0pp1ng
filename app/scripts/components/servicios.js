@@ -50,28 +50,40 @@
                 centered: true,
                 content: [{
                           elementType: 'img',
-                          src:'images/iconos/merca-estrategia-on.png',
-                          class: 'icon-servicios'
+                          src:'images/iconos/merca-estrategia-off.png',
+                          class: 'icon-servicios servicios-group'
+                        },
+                        {
+                          elementType: 'ul',
+                          class: 'pink-content listServicios',
+                          list: [{
+                                    label:'ESTUDIO DE MERCADO'
+                                  },
+                                  {
+                                    label:'ANÁLISIS DE TENDENCIAS'
+                                  },
+                                  {
+                                    label:'SHOPPER MARKETING'
+                                  }]
                         },
                         {
                           elementType: 'p',
-                          class: 'centered',
+                          class: 'centered pink-content',
                           text: 'MERCADOTECNIA Y ESTRATEGIA'
-                        }
-                      ]
+                        }]
                        },
-                      {
+                       {
                        title: '',
                        class: 'content-column',
                        centered: true,
                        content: [{
                                  elementType: 'img',
-                                 src:'images/iconos/digital-social-on.png',
+                                 src:'images/iconos/digital-social-off.png',
                                  class: 'icon-servicios'
                                 },
                                 {
                                   elementType: 'p',
-                                  class: 'centered',
+                                  class: 'centered pink-content',
                                   text: 'DIGITAL Y SOCIAL MEDIA'
                                 }]
                      }]
@@ -83,13 +95,13 @@
                         centered: true,
                         content: [{
                                   elementType: 'img',
-                                  src:'images/iconos/publi-diseno-active-on.png',
+                                  src:'images/iconos/publi-diseno-off.png',
                                   class: 'icon-servicios'
                                 },
                                 ,
                                 {
                                   elementType: 'p',
-                                  class: 'centered',
+                                  class: 'centered pink-content',
                                   text: 'PUBLICIDAD Y DISEÑO'
                                 }]
                       },
@@ -99,12 +111,12 @@
                        centered: true,
                        content: [{
                                  elementType: 'img',
-                                 src:'images/iconos/imagen-rels-on.png',
+                                 src:'images/iconos/imagen-rels-off.png',
                                  class: 'icon-servicios'
                                 },
                                 {
                                   elementType: 'p',
-                                  class: 'centered',
+                                  class: 'centered pink-content',
                                   text: 'IMAGEN Y RELACIONES PÚBLICAS'
                                 }]
                     }]
@@ -127,7 +139,7 @@
                                             content: [{
                                                        elementType: 'img',
                                                        src: 'images/iconos/asesoria-consultoria-off.png',
-                                                       class: 'icon-servicios'
+                                                       class: 'icon-servicios-big'
                                                      }]
                                         },
                                         {
@@ -136,6 +148,7 @@
                                             centered: true,
                                             content: [{
                                                       elementType: 'p',
+                                                      class: 'pink-subtitle',
                                                       text: 'ASESORIA Y CONSULTORÍA'
                                                     },
                                                     {

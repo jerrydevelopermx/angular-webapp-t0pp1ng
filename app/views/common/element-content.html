@@ -4,7 +4,10 @@
   <p ng-if="c.elementType === 'p'" class="{{c.class}}">{{c.text}}</p>
   <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
   <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
-    <li ng-repeat="l in c.list"><a class="{{l.class}}" href="{{l.url}}">{{l.label}}</a></li>
+    <li ng-repeat="l in c.list">
+      <a ng-if="l.url" class="{{l.class}}" href="{{l.url}}">{{l.label}}</a>
+      <label ng-if="!l.url">{{l.label}}</label>
+    </li>
   </ul>
   <ul ng-if="c.elementType === 'ul-icons'" class="{{c.class}}">
     <li ng-repeat="l in c.list"><a href="{{l.url}}"><i class="{{l.class}}">&nbsp;</i>{{l.label}}</a></li>
