@@ -2,7 +2,7 @@
   <div ng-if="c.elementType === 'html'" ng-bind-html="c.html"></div>
   <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
   <p ng-if="c.elementType === 'p'" class="{{c.class}}">{{c.text}}</p>
-  <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+  <img ng-if="c.elementType === 'img'" ng-src="{{c.src}}" class="{{c.class}}"/>
   <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
     <li ng-repeat="l in c.list">
       <a ng-if="l.url" class="{{l.class}}" href="{{l.url}}">{{l.label}}</a>
@@ -20,7 +20,7 @@
         </md-card-title>
         <md-card-content class="{{c.cardContentClass}}">
           <div ng-if="c.type=='imageContent'">
-            <img src="images/{{c.image}}" alt="" class="{{c.class}}"/>
+            <img ng-src="images/{{c.image}}" alt="" class="{{c.class}}"/>
           </div>
           <p ng-if="c.type=='imageContent'">
             {{c.text}}
@@ -33,7 +33,7 @@
           </blockquote>
           <div ng-if="c.type=='blockquote'">
 							<div ng-if="c.author.image">
-								<img src="images/{{c.author.image}}" alt="" class="author"/>
+								<img ng-src="images/{{c.author.image}}" alt="" class="author"/>
 							</div>
 							<p class="credit">- <strong>{{c.author.name}}</strong> <span>{{c.author.position}}</span></p>
 					</div>
@@ -43,7 +43,7 @@
             <p><span><strong>{{c.author.position}}</strong></span></p>
             <p class="author-text">{{c.text}}</p>
             <div ng-if="c.author.image" style="text-align: center">
-              <img src="images/{{c.author.image}}" alt="" class="author"/>
+              <img ng-src="images/{{c.author.image}}" alt="" class="author"/>
             </div>
           </div>
           </md-card-content>
