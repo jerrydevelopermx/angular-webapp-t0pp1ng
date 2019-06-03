@@ -379,7 +379,7 @@ body:after {
       background:#E5155F;
       z-index:-1;
       width:2px;
-      height:100%;
+      height:95%;
       position:absolute;
       left:78px;
       margin-top: 25px;
@@ -390,10 +390,18 @@ body:after {
       z-index:-1;
       top:2px;
       width:2px;
-      height:140%;
+      height:160%;
       position:absolute;
       left:78px;
       margin-bottom: 15px
+    }
+
+    .servicios-name-label{
+      text-align:center;
+      width: 200px;
+      font-size:15px;
+      font-weight: bold;
+      color: #E5155F;
     }
 }
 
@@ -708,6 +716,14 @@ body:after {
       position:absolute;
       left:40px;
       margin-bottom: 5px
+    }
+
+    .servicios-name-label{
+      text-align:center;
+      width: 180px;
+      font-size:12px;
+      font-weight: bold;
+      color: #E5155F;
     }
 }
 

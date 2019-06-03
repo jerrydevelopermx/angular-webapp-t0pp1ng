@@ -149,7 +149,7 @@
                                             content: [{
                                                       elementType: 'p',
                                                       class: 'pink-subtitle',
-                                                      text: 'ASESORIA Y CONSULTORÍA'
+                                                      text: 'ASESORÍA Y CONSULTORÍA'
                                                     },
                                                     {
                                                       elementType: 'p',
