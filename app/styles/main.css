@@ -57,7 +57,7 @@ body:after {
 /*------------------------------ MEDIA ALL ---------------------------------*/
 @media all and (min-width: 960px) {
     body{
-        font-size: 11pt;
+        font-size: 18px;
     }
     .content-column {
       padding: 5px;
@@ -246,8 +246,10 @@ body:after {
       font-size: 30px;
     }
     h2 {
-      font-size: 2.75em;
-      line-height: 1.5em;
+      font-size: 55px;
+      line-height: 1em;
+      margin: 0 0 0 0;
+      text-transform: uppercase;
     }
     .strip-content {
       background-color: #E5155F;
@@ -259,7 +261,7 @@ body:after {
       background-size: cover;
       position: relative;
       z-index: 1;
-      padding: 5em 0em 5em;
+      padding: 3em 0em;
     }
 
     .map-container{
@@ -402,6 +404,27 @@ body:after {
       font-weight: bold;
       color: #E5155F;
     }
+
+    .strip-content p{
+      text-align: center;
+      margin: 0 30px;
+      font-size: 30px;
+    }
+
+    .custom-counter li {
+        counter-increment: step-counter;
+        margin: 0 10px;
+        font-size: 30px;
+    }
+    .custom-counter li::before {
+        content: counter(step-counter);
+        margin-right: 8px;
+        font-size: 45px;
+        color: white;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 3px;
+    }
 }
 
 /*------------------------------ MEDIA MEDIUM ---------------------------------*/
@@ -427,7 +450,7 @@ body:after {
 /*------------------------------ MEDIA SMALL ---------------------------------*/
 @media (max-width: 599px) {
     body{
-        font-size: 14pt;
+        font-size: 14px;
     }
     .content-column {
       /*margin-left:5px;*/
@@ -569,10 +592,15 @@ body:after {
       max-width: 320px
     }
     h2 {
-      font-size: 1.75em;
-      line-height: 1.5em;
+      font-size: 35px;
+      margin: 0 0 0 0;
+      text-transform: uppercase;
+      line-height: 1em;
     }
 
+    .strip-content div {
+      font-size: 20px;
+    }
     .strip-content {
       background-color: #E5155F;
       color: rgba(255, 255, 255, 0.75);
@@ -583,7 +611,7 @@ body:after {
       background-size: cover;
       position: relative;
       z-index: 1;
-      padding: 2em 0em 2em;
+      padding: 1em 0em;
     }
 
     .map-container{
@@ -722,6 +750,27 @@ body:after {
       font-size:12px;
       font-weight: bold;
       color: #E5155F;
+    }
+
+    .strip-content p{
+      text-align: center;
+      margin: 0 30px;
+      font-size: 25px;
+    }
+
+    .custom-counter li {
+        counter-increment: step-counter;
+        margin: 0 10px;
+        font-size: 25px;
+    }
+    .custom-counter li::before {
+        content: counter(step-counter);
+        margin-right: 5px;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 3px;
     }
 }
 
@@ -1005,12 +1054,6 @@ ul.footer-list a:hover {
   font-size: 40px;
 }
 
-.strip-somos p, .strip-nosotros p {
-  text-align: center;
-  margin: 0 30px;
-  font-size: 35px;
-}
-
 
 .button-margin {
   margin-top: 15px;
@@ -1041,19 +1084,7 @@ ul.footer-list a:hover {
     padding-right: 0;
     list-style-type: none;
 }
-.custom-counter li {
-    counter-increment: step-counter;
-    margin: 10px;
-}
-.custom-counter li::before {
-    content: counter(step-counter);
-    margin-right: 8px;
-    font-size: 45px;
-    color: white;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 3px;
-}
+
 
 
 #cta3 {
