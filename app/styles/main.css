@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 @font-face {
   font-family: 'BebasNeue';
@@ -320,7 +319,7 @@ body:after {
 
     /*  SERVICIOS bullets    */
     .icon-servicios-bullets{
-      height:200px;
+      height:150px;
     }
     .list-wrapper {
       position:relative;
