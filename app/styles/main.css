@@ -271,6 +271,7 @@ body:after {
     }
 
     .pink-subtitle {
+      margin-top: 20px;
       color: #E5155F;
       font-weight: bolder;
       font-size: 38px;
@@ -279,9 +280,9 @@ body:after {
 
     .gray-subtitle {
       color:#aaa;
-      margin: 12px;
       font-weight: bolder;
-      font-size: 39px;
+      font-size: 45px;
+      margin-top:8px;
       text-align: center;
     }
     .author{
@@ -299,17 +300,16 @@ body:after {
       padding: 15% 0;
     }
     .nosotros-content-big{
-      font-size: 95px;
+      font-size: 117px;
       color: #E5155F;
       font-weight: bolder;
-      margin:10px 0;
+      margin-top:90px;
     }
 
     .nosotros-content-medium{
-      font-size: 65px;
+      font-size: 72px;
       color: black;
-      font-weight: bolder;
-      margin:45px 0;
+      margin:50px 0;
     }
 
     .nosotros-content-small{
@@ -424,6 +424,10 @@ body:after {
         font-weight: bold;
         padding: 3px 8px;
         border-radius: 3px;
+    }
+
+    .paragraph-margin {
+      margin: 25px 0;
     }
 }
 
@@ -621,6 +625,7 @@ body:after {
     }
 
     .pink-subtitle {
+      margin-top: 10px;
       color: #E5155F;
       font-weight: bolder;
       font-size: 20px;
@@ -647,21 +652,21 @@ body:after {
       padding: 15% 0;
     }
     .nosotros-content-big{
-      font-size: 55px;
+      font-size: 53px;
       color: #E5155F;
       font-weight: bolder;
-      margin:15px 0;
+      margin-top:41px;
     }
 
     .nosotros-content-medium{
-      font-size:28px;
+      font-size:33px;
       color: black;
       font-weight: bolder;
-      margin:8px 0;
+      margin:23px 0;
     }
 
     .nosotros-content-small{
-      font-size: 20px;
+      font-size: 25px;
       color: #aaa;
       font-weight: bolder;
       margin:0px 0;
@@ -771,6 +776,10 @@ body:after {
         font-weight: bold;
         padding: 3px 8px;
         border-radius: 3px;
+    }
+
+    .paragraph-margin {
+      margin: 15px 0;
     }
 }
 
@@ -1048,6 +1057,16 @@ ul.footer-list a:hover {
 
 .bebas-content{
   font-family: BebasNeue, sans-serif;
+}
+.gotham-medium-content {
+  font-family: Gotham-Medium,sans-serif;
+}
+.gotham-big-content {
+  font-family: Gotham-Bold,sans-serif;
+}
+.gothan-thin-content {
+  font-family: Gotham-Thin, sans-serif;
+  font-weight: bold;
 }
 .asesoria-content {
   margin-top: 40px;

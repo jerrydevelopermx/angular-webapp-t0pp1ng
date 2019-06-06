@@ -153,6 +153,7 @@
                                                     },
                                                     {
                                                       elementType: 'p',
+                                                      class: 'paragraph-margin',
                                                       text: 'No importa de que tamaño sea tu proyecto, nosotros podemos ayudarte a hacerlo crecer. Si eres un emprendedor, tienes una PYME o una asociación, tenemos el conocimiento necesario para encontrar '
                                                             + 'juntos esas oportunidades que estás buscando.'
                                                     },
@@ -161,7 +162,7 @@
                                                       class: 'actions centered',
                                                       list: [{
                                                         label:'AGENDA TU CITA',
-                                                        class:'button medium',
+                                                        class:'button medium bebas-content',
                                                         url:'#!/contacto'
                                                       }]
                                                     }]

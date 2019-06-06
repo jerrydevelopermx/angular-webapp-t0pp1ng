@@ -38,7 +38,7 @@
                       centered: true,
                       content: [{
                                  elementType: 'html',
-                                 html: '<div class="nosotros-content-div"><div class="nosotros-content-small">SOMOS UNA AGENCIA</div><div class="nosotros-content-medium"> DE CREATIVIDAD</div><div class="nosotros-content-big"> APLICADA</div></div>'
+                                 html: '<div class="nosotros-content-div"><div class="nosotros-content-small">SOMOS UNA AGENCIA</div><div class="nosotros-content-medium gotham-medium-content"> DE CREATIVIDAD</div><div class="nosotros-content-big gotham-big-content"> APLICADA</div></div>'
                                }]
                     },
                     {
@@ -55,7 +55,7 @@
 
           vm.stripSomos = {
             title: '',
-            class: 'strip-somos',
+            class: 'strip-somos gothan-thin-content',
             content:  '<p>SOMOS UNA AGENCIA QUE TRABAJA BAJO UNA VISIÓN DE NEGOCIO, CREATIVA Y HUMANA.</p>'
           };
 
@@ -66,7 +66,7 @@
                         class: 'bebas-content'
                       },
                       description: {
-                        text: '<span class="pink-subtitle">JÓVENES, PROFESIONALES, EMPRENDEDORES, DIVERTIDOS,</span><span class="gray-subtitle"> GENIOS, MILLONARIOS, PLAYBOYS Y FILÁNTROPOS </span>',
+                        text: '<span class="pink-subtitle gotham-medium-content">JÓVENES, PROFESIONALES, EMPRENDEDORES, DIVERTIDOS,</span><span class="gray-subtitle"> GENIOS, MILLONARIOS, PLAYBOYS Y FILÁNTROPOS </span>',
                         class: 'subcontent-title justified'
                       },
                     rows: [{
@@ -174,7 +174,7 @@
                                 image: 'pic01.jpg',
                                 position: 'Desarrollo web'
                               },
-                              text: 'Ing. en Sistemas. Desarrollador de Software, especializado en tecnologías Web. Amante de los deportes, los viajes, la guitarra y cualquier otro instrumento musical.'
+                              text: 'Ing. en Sistemas. Desarrollador de Software, especializado en tecnologías web. Amante de los deportes, los viajes, la guitarra y cualquier otro instrumento musical.'
                           }]
                       }]
                     },
