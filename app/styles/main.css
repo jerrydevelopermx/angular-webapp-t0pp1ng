@@ -783,6 +783,18 @@ body:after {
     }
 }
 
+.profile-name {
+  font-family: BebasNeue, sans-serif;
+  font-size: 24px;
+}
+.profile-position {
+  font-family: Gotham-Medium, sans-serif;
+}
+.profile-description {
+  margin: 10px;
+  font-family: Gotham-Light, sans-serif;
+}
+
 .servicios-group {
   float: left;
 }
@@ -800,7 +812,7 @@ md-card md-card-content.servicio-card  {
 }
 
 md-card md-card-content.perfil-card  {
-  min-height: 380px
+  min-height: 200px
 }
 .white-font {
   color: #fff;

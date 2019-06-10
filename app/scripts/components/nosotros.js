@@ -81,7 +81,7 @@
                               type:'profile',
                               author: {
                                 name: 'Omar Villaseñor',
-                                image: 'pic01.jpg',
+                                image: '',
                                 position: 'Director Creativo',
                                 twitter: '@omarvzayas'
                               },
@@ -99,7 +99,7 @@
                               type:'profile',
                               author: {
                                 name: 'Gabriela Sánchez',
-                                image: 'pic01.jpg',
+                                image: '',
                                 position: 'Directora de marketing y estrategia'
                               },
                               text: 'Mercadóloga. Con experiencia en investigación de mercados, marketing y propuestas de valor. Bailarina, apasionada de los animales y los viajes.'
@@ -116,7 +116,7 @@
                               type:'profile',
                               author: {
                                 name: 'Angélica García',
-                                image: 'pic01.jpg',
+                                image: '',
                                 position: 'Directora de contenidos',
                                 twitter: '@aegahe'
                               },
@@ -136,7 +136,7 @@
                               type:'profile',
                               author: {
                                 name: 'Samuel García',
-                                image: 'pic01.jpg',
+                                image: '',
                                 position: 'Director de arte'
                               },
                               text: 'Diseñador gráfico. Con desarrollo en branding, fotografía, edición digital de imagen, lettering y creación de contenidos.'
@@ -153,7 +153,7 @@
                               type:'profile',
                               author: {
                                 name: 'Sandra Herrera',
-                                image: 'pic01.jpg',
+                                image: '',
                                 position: 'Directora de imagen y relaciones públicas',
                                 twitter: '@san.hm22'
                               },
@@ -171,56 +171,13 @@
                               type:'profile',
                               author: {
                                 name: 'Gerardo García',
-                                image: 'pic01.jpg',
+                                image: '',
                                 position: 'Desarrollo web'
                               },
                               text: 'Ing. en Sistemas. Desarrollador de Software, especializado en tecnologías web. Amante de los deportes, los viajes, la guitarra y cualquier otro instrumento musical.'
                           }]
                       }]
-                    },
-                    {
-                      columns: [{
-                          title: '',
-                          class: 'content-column',
-                          centered: false,
-                          content: [{
-                              elementType: 'card',
-                              cardContentClass: 'perfil-card',
-                              class: 'justified',
-                              type:'profile',
-                              author: {
-                                name: 'Krissel Ríos',
-                                image: 'pic01.jpg',
-                                position: 'Arte'
-                              },
-                              text: 'Animadora digital. Gusto por la edición de sonido y fotografía. Fan del cine animado y live action.'
-                          }]
-                      },
-                      {
-                          title: '',
-                          class: 'content-column',
-                          centered: false,
-                          content: [{
-                              elementType: 'card',
-                              cardContentClass: 'perfil-card',
-                              class: 'justified',
-                              type:'profile',
-                              author: {
-                                name: 'Daniel Vasquez',
-                                image: 'pic01.jpg',
-                                position: 'Arte'
-                              },
-                              text: 'Animador digital. Con experiencia en animación 2D y motion graphics. Aficionado del cine animado y la ilustración.'
-                          }]
-                      },
-                      {
-                          title: '',
-                          class: 'content-column',
-                          centered: true,
-                          content: []
-                      }]
                     }
-
                   ],
                     bottom :null
           };

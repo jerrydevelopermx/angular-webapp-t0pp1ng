@@ -39,9 +39,20 @@
 					</div>
 
           <div ng-if="c.type=='profile'">
-            <div><span><strong>{{c.author.name}}</strong></span><span style="float: right" ng-if="c.author.twitter"><img src="images/iconos/twitter-icon.png"/>{{c.author.twitter}}</span></div>
-            <p><span><strong>{{c.author.position}}</strong></span></p>
-            <p class="author-text">{{c.text}}</p>
+            <div>
+                <span class="profile-name">{{c.author.name}}</span>
+                <div style="float: right" class="profile-description" ng-if="c.author.twitter">
+                  <div>
+                    <img style="width:15px" src="images/iconos/twitter-icon.png" class=""/>
+                    {{c.author.twitter}}
+                  </div>
+                </div>
+            </div>
+            <p>
+              <span class="profile-position">{{c.author.position}}
+              </span>
+            </p>
+            <p class="profile-description">{{c.text}}</p>
             <div ng-if="c.author.image" style="text-align: center">
               <img ng-src="images/{{c.author.image}}" alt="" class="author"/>
             </div>
