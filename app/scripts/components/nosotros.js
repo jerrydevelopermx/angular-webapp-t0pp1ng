@@ -138,7 +138,8 @@
                               author: {
                                 name: 'Samuel García',
                                 image: '',
-                                position: 'Director de arte'
+                                position: 'Director de arte',
+                                twitter: '@soymrsam'
                               },
                               text: 'Diseñador gráfico. Con desarrollo en branding, fotografía, edición digital de imagen, lettering y creación de contenidos.'
                           }]
