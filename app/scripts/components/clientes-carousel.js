@@ -23,7 +23,9 @@
                       { className:'dulceria-angeles', url: 'https://www.facebook.com/Dulcer%C3%ADa-Ángeles-2099510860142660'},
                       { className:'studio-black-jeans', url: 'https://www.facebook.com/StudioBlackJeans'},
                       { className:'first-lab', url: 'http://firstlab.mx'},
-                      { className:'yeliss', url: 'https://www.facebook.com/YelissOficial'}
+                      { className:'yeliss', url: 'https://www.facebook.com/YelissOficial'},
+                      { className:'tem'},
+
                     ];
           vm.asesorias = [
                       { className:'soniar-despierto'},

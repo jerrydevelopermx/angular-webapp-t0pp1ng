@@ -206,6 +206,13 @@ body:after {
       content: url('../images/logos/yeliss.png');
     }
 
+    div.logo-tem{
+      content: url('../images/logos/tem-off.png');
+    }
+    div.logo-tem:hover{
+      content: url('../images/logos/tem.png');
+    }
+
     div.logo-soniar-despierto{
       content: url('../images/logos/soniar-despierto-off.png');
     }
@@ -571,6 +578,11 @@ body:after {
     div.logo-pub-imagen{
       content: url('../images/logos/pub-imagen.png');
     }
+
+    div.logo-tem{
+      content: url('../images/logos/tem.png');
+    }
+
     div.banner-container {
       position: relative;
       text-align: center;

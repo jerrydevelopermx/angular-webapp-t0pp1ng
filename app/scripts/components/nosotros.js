@@ -156,7 +156,7 @@
                                 name: 'Sandra Herrera',
                                 image: '',
                                 position: 'Directora de imagen y relaciones públicas',
-                                twitter: '@san.hm22'
+                                twitter: '@sanhm22'
                               },
                               text: 'Diseñadora gráfica. Especialista en relaciones públicas e imagen personal. Romántica, alegre y entregada a las actividades altruistas.'
                           }]
