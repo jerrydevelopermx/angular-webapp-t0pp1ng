@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Gotham-Bold';
-  src: URL('../fonts/GothamBold.ttf') format('truetype');
+  src: URL('../fonts/Gotham-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'Gotham-Light';
@@ -303,20 +303,17 @@ body:after {
       font-size: 117px;
       color: #E5155F;
       font-weight: bolder;
-      margin-top:90px;
     }
 
     .nosotros-content-medium{
       font-size: 72px;
       color: black;
-      margin:50px 0;
     }
 
     .nosotros-content-small{
       font-size: 55px;
       color: #aaa;
       font-weight: bolder;
-      margin:22px 0;
     }
 
     /*  SERVICIOS bullets    */
@@ -1071,7 +1068,8 @@ ul.footer-list a:hover {
   font-family: BebasNeue, sans-serif;
 }
 .gotham-medium-content {
-  font-family: Gotham-Medium,sans-serif;
+  font-family: Gotham-Light,sans-serif;
+  font-weight: bolder;
 }
 .gotham-big-content {
   font-family: Gotham-Bold,sans-serif;
