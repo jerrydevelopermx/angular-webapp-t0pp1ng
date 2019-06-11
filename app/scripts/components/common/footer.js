@@ -66,27 +66,32 @@
                                             {
                                               url: 'https://www.facebook.com/ToppingCreativo',
                                               label:'Facebook',
+                                              target: '_blank',
                                               class: 'tp-fb'
                                             },
                                             {
                                               url: 'https://instagram.com/toppingcreativomx',
                                               label:'Instagram',
+                                              target: '_blank',
                                               class: 'tp-instagram'
                                             },
                                             {
                                               url: 'https://twitter.com/toppingcreativo/',
                                               label:'Twitter',
+                                              target: '_blank',
                                               class: 'tp-twitter'
                                             },
                                             {
                                               url: 'https://www.linkedin.com/company/toppingcreativo',
                                               label:'LinkedIn',
+                                              target: '_blank',
                                               class: 'tp-linkedin'
                                             },
 
                                             {
                                               url: ' http://vm.tiktok.com/d9DnoA',
                                               label:'Tik Tok',
+                                              target: '_blank',
                                               class: 'tp-tiktok'
                                             }
                                           ]

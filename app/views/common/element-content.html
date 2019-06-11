@@ -10,7 +10,7 @@
     </li>
   </ul>
   <ul ng-if="c.elementType === 'ul-icons'" class="{{c.class}}">
-    <li ng-repeat="l in c.list"><a href="{{l.url}}"><i class="{{l.class}}">&nbsp;</i>{{l.label}}</a></li>
+    <li ng-repeat="l in c.list"><a href="{{l.url}}" target="{{l.target}}"><i class="{{l.class}}">&nbsp;</i>{{l.label}}</a></li>
   </ul>
   <md-card ng-if="c.elementType === 'card'"  md-theme="default" md-theme-watch class="{{c.elementClass}}">
         <md-card-title ng-if="c.title!=null">
