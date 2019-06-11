@@ -15,15 +15,15 @@
           // Slick 3
           //====================================
           vm.clientes = [
-                      { className:'arumabin'},
-                      { className:'bella-pizza'},
-                      { className:'consesa'},
-                      { className:'d-iris'},
-                      { className:'daen'},
-                      { className:'dulceria-angeles'},
-                      { className:'studio-black-jeans'},
-                      { className:'first-lab'},
-                      { className:'yeliss'}
+                      { className:'arumabin' },
+                      { className:'bella-pizza', url: 'https://www.facebook.com/labellapizzamx/'},
+                      { className:'consesa', url: 'http://consesa.com.mx'},
+                      { className:'d-iris', url: 'https://www.facebook.com/dirismx'},
+                      { className:'daen', url: 'https://www.facebook.com/profile.php?id=100009717436642'},
+                      { className:'dulceria-angeles', url: 'https://www.facebook.com/Dulcer%C3%ADa-Ángeles-2099510860142660'},
+                      { className:'studio-black-jeans', url: 'https://www.facebook.com/StudioBlackJeans'},
+                      { className:'first-lab', url: 'http://firstlab.mx'},
+                      { className:'yeliss', url: 'https://www.facebook.com/YelissOficial'}
                     ];
           vm.asesorias = [
                       { className:'soniar-despierto'},

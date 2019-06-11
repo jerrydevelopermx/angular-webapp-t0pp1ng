@@ -100,7 +100,8 @@
                               author: {
                                 name: 'Gabriela Sánchez',
                                 image: '',
-                                position: 'Directora de marketing y estrategia'
+                                position: 'Directora de marketing y estrategia',
+                                twitter: '@soyabbys'
                               },
                               text: 'Mercadóloga. Con experiencia en investigación de mercados, marketing y propuestas de valor. Bailarina, apasionada de los animales y los viajes.'
                           }]
@@ -172,7 +173,8 @@
                               author: {
                                 name: 'Gerardo García',
                                 image: '',
-                                position: 'Desarrollo web'
+                                position: 'Desarrollo web',
+                                twitter: '@jerrydevmx'
                               },
                               text: 'Ing. en Sistemas. Desarrollador de Software, especializado en tecnologías web. Amante de los deportes, los viajes, la guitarra y cualquier otro instrumento musical.'
                           }]

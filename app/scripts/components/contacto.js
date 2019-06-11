@@ -26,6 +26,10 @@
                       content: [{
                           elementType: 'p',
                           text: '5 SUR 2901 A INTERIOR 4 COLONIA CHULAVISTA, PUEBLA, PUE.'
+                      },
+                      {
+                          elementType: 'p',
+                          text: 'EMAIL: hola@toppingcreativo.com.mx'
                       }]
                     }]
           };
