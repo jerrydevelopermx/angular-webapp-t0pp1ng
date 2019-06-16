@@ -794,6 +794,35 @@ body:after {
     }
 }
 
+.post-div{
+  position: relative;
+}
+
+.post-cover {
+  width:290px;
+}
+.post-description{
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bolder;
+  height: 50px;
+}
+.post-topic{
+  margin:5px 0;
+  display:inline;
+  background-color: #E5155F;
+  color: #fff;
+  padding: 2px;
+  width: auto;
+  font-weight: bolder;
+  font-size: 13px;
+}
+.content-column-blog {
+  margin: 5px;
+}
+
+
 .profile-name {
   font-family: BebasNeue, sans-serif;
   font-size: 24px;
@@ -901,6 +930,28 @@ md-card{
   box-shadow: 16px 8px 10px 0 rgba(0,0,0,.4),
               0 1px 1px 0 rgba(0,0,0,.14),
               0 2px 1px -1px rgba(0,0,0,.12)
+}
+
+md-card.post-card {
+  height: 450px;
+  background-color: #fff;
+  position: relative;
+}
+
+md-card.post-card::before,
+md-card.post-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+md-card.post-card::after {
+    border-width: 0.8em;
+    border-right-color: #E5155F;
+    border-bottom-color: #E5155F;
 }
 
 .md-tab {

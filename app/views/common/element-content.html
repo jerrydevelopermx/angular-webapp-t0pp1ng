@@ -57,6 +57,17 @@
               <img ng-src="images/{{c.author.image}}" alt="" class="author"/>
             </div>
           </div>
+
+          <div class="post-div" ng-if="c.type=='post'">
+            <img ng-src="images/{{c.cover}}" alt="" class="post-cover"/>
+            <div class="post-description">
+              {{c.description}}
+            </div>
+            <div class="post-topic"> {{c.topic}} </div>
+
+          </div>
+
+
           </md-card-content>
   </md-card>
   <div id="{{c.id}}" class="{{c.id}}" ng-if="c.elementType === 'component'"></div>

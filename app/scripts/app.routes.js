@@ -20,9 +20,14 @@ function routes ($stateProvider, $urlRouterProvider) {
                     publicPage: true
                 })
 
-                .state('portafolio', {
-                    url: '/portafolio',
-                    component: 'appPortafolio',
+                .state('blog', {
+                    url: '/blog',
+                    component: 'appBlog',
+                    publicPage: true
+                })
+                .state('post', {
+                    url: '/blog/post',
+                    component: 'appPost',
                     publicPage: true
                 })
 
