@@ -296,7 +296,10 @@ body:after {
     	border-radius: 100%;
     	max-width: 120px;
     }
-
+    .author-post{
+      border-radius: 100%;
+      max-width: 90px;
+    }
     .author-text {
       margin:10px;
       min-height: 150px;
@@ -434,6 +437,41 @@ body:after {
 
     .paragraph-margin {
       margin: 25px 0;
+    }
+
+    .post-content p{
+      margin:25px 0;
+      text-align: justify;
+    }
+
+    .posts h1{
+      text-transform: uppercase;
+      font-size: 32px;
+    }
+
+    .post-bottom ul li{
+      color: #E5155F;
+      font-weight: bold;
+      font-size: 25px;
+      margin: 10px 0;
+    }
+
+    .post-topic{
+      margin:5px 0;
+      padding: 2px;
+      font-size: 15px;
+    }
+
+    .lateral-post-topic{
+      margin:5px 0;
+      padding: 2px;
+      font-size: 12px;
+    }
+
+    .post-topic-big{
+      margin:5px 0;
+      padding: 3px;
+      font-size: 20px;
     }
 }
 
@@ -654,6 +692,10 @@ body:after {
     	border-radius: 100%;
     	max-width: 100px;
     }
+    .author-post{
+      border-radius: 100%;
+      max-width: 40px;
+    }
     .author-text {
       margin:10px;
       height: 190px;
@@ -735,7 +777,7 @@ body:after {
       height: 15px;
       border-bottom: 1px solid;
       margin-right: 14px;
-      color: #E5155F
+      color: #E5155F;
     }
     .list-text {
         font-weight:200;
@@ -792,14 +834,79 @@ body:after {
     .paragraph-margin {
       margin: 15px 0;
     }
+
+    .post-content p{
+      padding: 10px;
+      text-align: justify;
+    }
+
+    .posts h1{
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .post-bottom ul li{
+      color: #E5155F;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 5px 0;
+    }
+    .post-topic{
+      margin:5px 0;
+      padding: 2px;
+      font-size: 13px;
+    }
+
+    .post-topic-big{
+      margin:5px 0;
+      padding: 3px;
+      font-size: 15px;
+    }
+
+    .bottom-post-topic{
+      margin:5px 0;
+      padding: 2px;
+      font-size: 9px;
+    }
 }
 
+.posts img{
+  text-align: center;
+}
+.post-content a {
+  color: #E5155F;
+  font-weight: bolder;
+}
+.post-bottom h3 {
+  text-align: left !important;
+}
+.post-bottom ul {
+  list-style: none;
+}
+
+.post-bottom a{
+  color: #E5155F;
+}
+.post-bottom a:hover {
+  color: rgba(0,0,0,0.87);
+}
+
+.post-content a:hover {
+  color: rgba(0,0,0,0.87);
+}
 .post-div{
   position: relative;
 }
 
+
 .post-cover {
   width:290px;
+}
+.lateral-post-cover{
+  width:217px;
+}
+.bottom-post-cover{
+  width:270px;
 }
 .post-description{
   text-transform: uppercase;
@@ -808,15 +915,74 @@ body:after {
   font-weight: bolder;
   height: 50px;
 }
+
+.lateral-post-description{
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bolder;
+  height: 30px;
+  font-size: 12px;
+}
+.bottom-post-description{
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bolder;
+  height: 28px;
+  font-size: 10px;
+}
+.post-description a{
+  color: rgba(0,0,0,0.87);
+}
+
+.lateral-post-description a{
+  color: rgba(0,0,0,0.87);
+}
+
+.bottom-post-description a{
+  color: rgba(0,0,0,0.87);
+}
+
 .post-topic{
-  margin:5px 0;
   display:inline;
   background-color: #E5155F;
   color: #fff;
-  padding: 2px;
   width: auto;
   font-weight: bolder;
-  font-size: 13px;
+  text-transform: uppercase;
+}
+.lateral-post-topic {
+  display:inline;
+  background-color: #E5155F;
+  color: #fff;
+  width: auto;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.bottom-post-topic {
+  display:inline;
+  background-color: #E5155F;
+  color: #fff;
+  width: auto;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.post-topic-big{
+  display:inline;
+  background-color: #E5155F;
+  color: #fff;
+  width: auto;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.post-content h3{
+  text-align: left !important;
+}
+.post-topic a:hover {
+  color: rgba(0,0,0,0.87);
+}
+.lateral-post-topic a:hover {
+  color: rgba(0,0,0,0.87);
 }
 .content-column-blog {
   margin: 5px;
@@ -937,6 +1103,21 @@ md-card.post-card {
   background-color: #fff;
   position: relative;
 }
+
+md-card.lateral-card {
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    width: 250px;
+}
+
+md-card.bottom-card {
+    height: 360px;
+    background-color: #fff;
+    position: relative;
+    width: 310px;
+}
+
 
 md-card.post-card::before,
 md-card.post-card::after {

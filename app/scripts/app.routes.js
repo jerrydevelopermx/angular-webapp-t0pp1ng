@@ -26,7 +26,7 @@ function routes ($stateProvider, $urlRouterProvider) {
                     publicPage: true
                 })
                 .state('post', {
-                    url: '/blog/post',
+                    url: '/blog/post/:post_id',
                     component: 'appPost',
                     publicPage: true
                 })

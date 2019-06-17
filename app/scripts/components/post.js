@@ -7,14 +7,42 @@
           data: '<',
         },
         templateUrl: 'views/post.html',
-        controller: function($scope, $anchorScroll, $location) {
+        controller: function($scope, $anchorScroll, $location, $stateParams, Requester) {
           var vm = this;
+          vm.post;
+          vm.relatedPosts;
+          vm.topPosts;
 
           vm.$onInit = function(){
             anchorScroll();
-
+            getData();
+            getTopPosts();
           }
 
+          function getData(){
+            Requester.get('blog/post/' + $stateParams.post_id, {}).then(function(data){
+              getRelatedPosts(data[0].category_id);
+              vm.post = data;
+            }, function(){
+
+            });
+          }
+
+          function getRelatedPosts(category_id){
+            Requester.get('blog/posts/' + category_id, {}).then(function(data){
+              vm.relatedPosts = data;
+            }, function(){
+
+            });
+          }
+
+          function getTopPosts(){
+            Requester.get('blog/posts/top', {}).then(function(data){
+              vm.topPosts = data;
+            }, function(){
+
+            });
+          }
 
           function anchorScroll(){
             var newHash = 'logo-div';

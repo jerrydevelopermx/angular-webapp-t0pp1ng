@@ -1,17 +1,67 @@
-<div flex layout="row" layout-xs="column">
-  <div style="border: 1px dotted" flex="15">
-    <p>Angélica Garcia</p>
-    <p>@aegahe</p>
+<div flex layout="row" layout-xs="column" class="content-column">
+  <div flex="15">
+    <div flex hide-xs hide-md>
+      <div style="text-align: center">
+        <img ng-src="images/{{$ctrl.post[0].auth_img}}" alt="" class="author-post"/>
+      </div>
+      <div style="text-align: center; font-weight: bold">{{$ctrl.post[0].auth_name}}</div>
+      <div style="text-align: center">
+        <img style="width:15px" src="images/iconos/twitter-icon.png" class=""/>
+        @{{$ctrl.post[0].auth_twitter}}
+      </div>
+    </div>
   </div>
-  <div flex style="border: 1px dotted">
+  <div class="posts" flex>
 
-    MARKETING
-    <h1>5 tips que te ayudarán a tener contento a ese cliente exigente</h1>
-    <img src="images/blog/blog1.png" width="70%" />
-    
+    <div flex layout="row" show-xs show-md hide-lg>
+      <div flex="30" layout="row" layout-align="center center">
+        <div class="post-topic" style="border: 1px dotted">{{$ctrl.post[0].category}}</div>
+      </div>
+      <div flex layout="column" layout-align="center end">
+        <img ng-src="images/{{$ctrl.post[0].auth_img}}" alt="" class="author-post"/>
+      </div>
+      <div flex layout="column" layout-align="center center">
+        <div style="text-align: center; font-weight: bold">{{$ctrl.post[0].auth_name}}</div>
+        <div style="text-align: center">
+          <img style="width:15px" src="images/iconos/twitter-icon.png" class=""/>
+          @{{$ctrl.post[0].auth_twitter}}
+        </div>
+      </div>
+    </div>
+
+    <div class="post-topic-big" show-lg hide-md hide-xs>{{$ctrl.post[0].category}}</div>
+    <h1>{{$ctrl.post[0].title}}</h1>
+    <img ng-src="images/{{$ctrl.post[0].cover}}" width="80%" style="margin: 0 10px"/>
+    <div ng-repeat="post in $ctrl.post" style="text-align: center">
+      <div class="post-content" ng-if="post.content" ng-bind-html="post.content"></div>
+      <img class="post-img" ng-if="post.image" ng-src="images/{{post.image}}" width="95%" />
+    </div>
+    <div ng-if="$ctrl.relatedPosts.length > 1" class="post-bottom">
+      <h3>TAMBIÉN TE PUEDE INTERESAR:</h3>
+      <ul>
+        <li ng-if="related.post_id != $ctrl.post[0].post_id" ng-repeat="related in $ctrl.relatedPosts"> <a href="#!/blog/post/{{related.post_id}}"> - {{related.title}}</a></li>
+      </ul>
+    </div>
   </div>
-  <div flex="20" style="border: 1px dotted">
-    LO MAS LEIDO
+  <div flex="20" flex-xs="100" flex-md="100" layout="column" layout-align="start center" style="border: 1px solid">
+    <div style="border-bottom: 4px solid; margin: 0px; font-size:25px;padding:5px; font-weight: bolder">
+      LO MÁS LEÍDO
+    </div>
+    <md-card show-lg hide-md hide-xs md-theme="default" md-theme-watch class="lateral-card" ng-repeat="c in $ctrl.topPosts">
+      <md-card-content class="{{c.cardContentClass}}">
+        <div class="post-div">
+          <img ng-src="images/{{c.cover}}" alt="" class="lateral-post-cover"/>
+          <div class="lateral-post-description">
+            <a href="#!/blog/post/{{c.post_id}}">{{c.title}} </a>
+          </div>
+          <div class="lateral-post-topic"> <a href="#!/blog/post/{{c.post_id}}">{{c.category}}</a> </div>
 
+        </div>
+      </md-card-content>
+    </md-card>
+
+    <div flex layout="column" hide-lg show-md show-xs>
+      <posts-carousel></posts-carousel>
+    </div>
   </div>
 </div>

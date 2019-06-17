@@ -1,0 +1,18 @@
+<div layout="column" class="content-column">
+  <slick class="slider" settings="$ctrl.slickConfig" ng-if="$ctrl.slickConfigLoaded">
+    <div class="" ng-repeat="i in $ctrl.topPosts" ng-include="'tpl2.html'"></div>
+  </slick>
+</div>
+<script type="text/ng-template" id="tpl2.html">
+  <md-card md-theme="default" md-theme-watch class="bottom-card">
+    <md-card-content class="{{i.cardContentClass}}">
+      <div class="post-div">
+        <img ng-src="images/{{i.cover}}" alt="" class="bottom-post-cover"/>
+        <div class="bottom-post-description">
+          <a href="#!/blog/post/{{i.post_id}}">{{i.title}} </a>
+        </div>
+        <div class="bottom-post-topic"> <a href="#!/blog/post/{{i.post_id}}">{{i.category}}</a> </div>
+      </div>
+    </md-card-content>
+  </md-card>
+</script>

@@ -18,6 +18,11 @@ angular
       'slickCarousel'
   ])
 
+
+.constant('APP',{
+  'api_url' : 'http://0bfe4660.ngrok.io/topping-api/index.php/'//'http://localhost/topping-api/index.php/',
+})
+
 /*
   .run(function($rootScope) {
     $rootScope.$on("$locationChangeStart", function(event, next, current) {

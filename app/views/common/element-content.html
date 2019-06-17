@@ -61,9 +61,9 @@
           <div class="post-div" ng-if="c.type=='post'">
             <img ng-src="images/{{c.cover}}" alt="" class="post-cover"/>
             <div class="post-description">
-              {{c.description}}
+              <a href="#!/blog/post/{{c.post_id}}">{{c.description}} </a>
             </div>
-            <div class="post-topic"> {{c.topic}} </div>
+            <div class="post-topic"> <a href="#!/blog/post/{{c.post_id}}">{{c.topic}}</a> </div>
 
           </div>
 
