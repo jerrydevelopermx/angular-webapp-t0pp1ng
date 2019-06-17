@@ -15,7 +15,7 @@
 
     <div flex layout="row" show-xs show-md hide-lg>
       <div flex="30" layout="row" layout-align="center center">
-        <div class="post-topic" style="border: 1px dotted">{{$ctrl.post[0].category}}</div>
+        <div class="post-topic">{{$ctrl.post[0].category}}</div>
       </div>
       <div flex layout="column" layout-align="center end">
         <img ng-src="images/{{$ctrl.post[0].auth_img}}" alt="" class="author-post"/>
@@ -43,7 +43,7 @@
       </ul>
     </div>
   </div>
-  <div flex="20" flex-xs="100" flex-md="100" layout="column" layout-align="start center" style="border: 1px solid">
+  <div flex="20" flex-xs="100" flex-md="100" layout="column" layout-align="start center">
     <div style="border-bottom: 4px solid; margin: 0px; font-size:25px;padding:5px; font-weight: bolder">
       LO MÁS LEÍDO
     </div>
@@ -61,7 +61,7 @@
     </md-card>
 
     <div flex layout="column" hide-lg show-md show-xs>
-      <posts-carousel></posts-carousel>
+      <posts-carousel posts="$ctrl.topPosts"></posts-carousel>
     </div>
   </div>
 </div>
