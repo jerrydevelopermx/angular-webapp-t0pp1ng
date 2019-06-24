@@ -1,14 +1,14 @@
 <div flex layout="column" class="menu-bar">
  <md-content flex layout="row">
     <a href="#!/"><div class="logo" id="logo-div"></div></a>
-    <md-nav-bar flex md-selected-nav-item="$ctrl.currentNav" hide-xs hide-sm hide-md>
+    <md-nav-bar flex md-selected-nav-item="$ctrl.currentNav" aria-label="main-menu" hide-xs hide-sm hide-md>
      <md-nav-item md-nav-href="#!/nosotros" name="nosotros">Nosotros</md-nav-item>
      <md-nav-item md-nav-href="#!/servicios" name="servicios">Servicios</md-nav-item>
      <md-nav-item md-nav-href="#!/blog" name="blog">Blog</md-nav-item>
      <md-nav-item md-nav-href="#!/contacto" name="contacto">Contacto</md-nav-item>
    </md-nav-bar>
-   <md-nav-bar flex show-xs hide-lg hide-md>
-     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="icon fa-bars sidemenu">
+   <md-nav-bar flex show-xs hide-lg hide-md aria-label="right-navbar">
+     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" aria-label="mobile-menu" class="icon fa-bars sidemenu">
      </md-button>
    </md-nav-bar>
 </md-content>

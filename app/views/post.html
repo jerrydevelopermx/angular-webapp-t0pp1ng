@@ -31,7 +31,9 @@
 
     <div class="post-topic-big" show-lg hide-md hide-xs>{{$ctrl.post[0].category}}</div>
     <h1>{{$ctrl.post[0].title}}</h1>
-    <img ng-src="images/{{$ctrl.post[0].cover}}" width="80%" style="margin: 0 10px"/>
+    <div class="post-date"><i class="fa fa-calendar"></i>&nbsp;{{$ctrl.fDate}}</div>
+
+    <img class="post-img" ng-src="images/{{$ctrl.post[0].main}}" width="100%"/>
     <div ng-repeat="post in $ctrl.post" style="text-align: center">
       <div class="post-content" ng-if="post.content" ng-bind-html="post.content"></div>
       <img class="post-img" ng-if="post.image" ng-src="images/{{post.image}}" width="95%" />

@@ -32,31 +32,41 @@
 
           function formatData(data){
             var rows = [];
-            var col;
+            var column;
             var row = {columns: []};
+            var counter = 0;
+            for(var i = 0; i < 4; i++){
+              if(data[i] != undefined){
+                column = {
+                    title: '',
+                    class: 'content-column-blog',
+                    centered: false,
+                    content: [{
+                        elementType: 'card',
+                        elementClass: 'post-card',
+                        cardContentClass: 'perfil-card',
+                        class: 'justified',
+                        type:'post',
+                        cover: data[i].cover,
+                        topic: data[i].category,
+                        description: data[i].title,
+                        post_id: data[i].post_id
+                    }]
+                  };
+                } else {
+                  column = {
+                      title: '',
+                      class: 'content-column-blog',
+                      centered: false,
+                      content: []
+                    };
+                }
+                row.columns.push(column);
 
-            for(var index in data){
-              col = {
-                  title: '',
-                  class: 'content-column-blog',
-                  centered: false,
-                  content: [{
-                      elementType: 'card',
-                      elementClass: 'post-card',
-                      cardContentClass: 'perfil-card',
-                      class: 'justified',
-                      type:'post',
-                      cover: data[index].cover,
-                      topic: data[index].category,
-                      description: data[index].title,
-                      post_id: data[index].post_id
-                  }]
-              }
-              row.columns.push(col);
-              if(index%4 == 3){
-                rows.push(row);
-                row = {columns: []};
-              }
+                if(i == 3){
+                  rows.push(row);
+                  row = {columns: []};
+                }
             }
             return rows;
           }

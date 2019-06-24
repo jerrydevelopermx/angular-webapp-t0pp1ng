@@ -298,7 +298,7 @@ body:after {
     }
     .author-post{
       border-radius: 100%;
-      max-width: 90px;
+      max-width: 130px;
     }
     .author-text {
       margin:10px;
@@ -447,6 +447,7 @@ body:after {
     .posts h1{
       text-transform: uppercase;
       font-size: 32px;
+      font-family: Gotham-Bold;
     }
 
     .post-bottom ul li{
@@ -472,6 +473,38 @@ body:after {
       margin:5px 0;
       padding: 3px;
       font-size: 20px;
+    }
+    .post-date {
+      margin: 10px 0;
+    }
+
+    .post-description{
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 10px 0;
+      font-weight: bolder;
+      height: 50px;
+    }
+
+    md-card.post-card {
+      height: 450px;
+      background-color: #fff;
+      position: relative;
+    }
+    md-card md-card-content.perfil-card  {
+      min-height: 300px;
+      position: relative;
+    }
+    .post-content ul {
+        list-style: disc;
+        margin: 20px 40px;
+        padding-left: 1em;
+        text-align: left;
+    }
+
+    .post-content ul li {
+      margin:10px;
+      font-weight: bold;
     }
 }
 
@@ -868,8 +901,50 @@ body:after {
       padding: 2px;
       font-size: 9px;
     }
+    .post-date {
+      margin: 10px;
+    }
+
+    .post-description{
+      text-transform: uppercase;
+      padding: 5px;
+      margin: 5px 0;
+      font-weight: bolder;
+      height: 40px;
+    }
+
+    md-card.post-card {
+      height: 400px;
+      background-color: #fff;
+      position: relative;
+    }
+    md-card md-card-content.perfil-card  {
+      min-height: 250px;
+      position: relative;
+    }
+    .post-content ul {
+        list-style: disc;
+        margin: 0 20px 15px;
+        padding-left: 1em;
+        text-align: left;
+    }
+    .post-content ul li {
+      margin:5px;
+      font-weight: bold;
+    }
 }
 
+
+
+
+
+md-input-container {
+  margin: 10px 0;
+}
+
+md-input-container .md-input {
+  background: rgba(0,0,0, 0.075);
+}
 .posts img{
   text-align: center;
 }
@@ -908,13 +983,7 @@ body:after {
 .bottom-post-cover{
   width:270px;
 }
-.post-description{
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 10px 0;
-  font-weight: bolder;
-  height: 50px;
-}
+
 
 .lateral-post-description{
   text-transform: uppercase;
@@ -977,6 +1046,8 @@ body:after {
 }
 .post-content h3{
   text-align: left !important;
+  font-family: Gotham-Bold, sans-serif;
+  margin-left: 10px;
 }
 .post-topic a:hover {
   color: rgba(0,0,0,0.87);
@@ -1017,9 +1088,6 @@ md-card md-card-content.servicio-card  {
   min-height: 170px
 }
 
-md-card md-card-content.perfil-card  {
-  min-height: 200px
-}
 .white-font {
   color: #fff;
 }
@@ -1098,11 +1166,7 @@ md-card{
               0 2px 1px -1px rgba(0,0,0,.12)
 }
 
-md-card.post-card {
-  height: 450px;
-  background-color: #fff;
-  position: relative;
-}
+
 
 md-card.lateral-card {
     height: 350px;

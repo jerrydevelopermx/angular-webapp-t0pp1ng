@@ -4,7 +4,7 @@
   </div>
   <div ng-if="$ctrl.data.description != null" ng-bind-html="$ctrl.data.description.text" flex layout="column" layout-md="column" layout-xs="column" class="{{$ctrl.data.description.class}}">
   </div>
-  <div flex layout="row" layout-md="column" layout-xs="column" ng-repeat="row in $ctrl.data.rows">
+  <div flex layout="row" layout-md="column" layout-xs="column" ng-repeat="row in $ctrl.data.rows track by $index">
     <div flex class="{{column.class}}" ng-repeat="column in row.columns">
       <h4>{{column.title}}</h4>
       <element-content data="column"></element-content>

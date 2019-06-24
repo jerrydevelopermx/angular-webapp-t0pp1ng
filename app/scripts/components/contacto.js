@@ -10,9 +10,9 @@
         controller: componentController
       })
 
-      function componentController($scope){
+      function componentController($scope, Requester){
         var vm = this;
-
+        vm.contact;
         vm.$onInit = function(){
           //console.log($compile('<app-location></app-location>')(vm))
           vm.contacto = {
@@ -33,6 +33,16 @@
                       }]
                     }]
           };
+        }
+
+        vm.sendEmail = function() {
+          console.log(vm.contact);
+          Requester.post('site/email', vm.contact).then(function(data){
+            console.log(data)
+          }, function(){
+
+          });
+
         }
       }
 })();

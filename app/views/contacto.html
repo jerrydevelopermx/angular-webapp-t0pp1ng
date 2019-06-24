@@ -20,39 +20,55 @@
 </div>
 
 
-  <!--<div flex layout="column" class="content-column bebas-content">
+  <div flex layout="column" class="content-column bebas-content">
     <h3>Escribe tus datos y cuéntanos tu idea. Te daremos respuesta en menos de 24 horas.</h3>
+    <form name="$ctrl.userForm" novalidate>
       <div flex layout="row" layout-md="column" layout-align="center center" layout-xs="column">
-        <div layout="row" flex="45" flex-xs="45" flex-md="45">
-          <input flex name="name" id="name" value="" placeholder="Nombre" type="text"/>
-        </div>
+        <md-input-container flex="45" flex-xs="45" flex-md="45" md-no-float layout="column" >
+          <div flex layout="row" >
+            <input flex name="name" id="name" type="text" ng-model="$ctrl.contact.name"  placeholder="Nombre" required/>
+          </div>
+          <div flex ng-messages="$ctrl.userForm.name.$error">
+            <div ng-message="required">Campo requerido</div>
+          </div>
+        </md-input-container>
       </div>
       <div flex layout="row" layout-md="column" layout-align="center center" layout-xs="column">
-        <div layout="row" flex="45" flex-xs="45" flex-md="45">
-          <input flex name="email" id="email" value="" placeholder="Correo Electrónico" type="email"/>
-        </div>
+        <md-input-container flex="45" flex-xs="45" flex-md="45" md-no-float layout="column" >
+          <div flex layout="row" >
+            <input flex name="email" id="email" type="email" ng-model="$ctrl.contact.email" placeholder="tucorreo@mail.com" required/>
+          </div>
+          <div flex ng-messages="$ctrl.userForm.email.$error">
+            <div ng-message="required">Campo requerido</div>
+            <div ng-message="email">Email no válido</div>
+          </div>
+        </md-input-container>
+
       </div>
       <div flex layout="row" layout-md="column" layout-align="center center" layout-xs="column">
-        <div layout="row" flex="15" flex-xs="45" flex-md="45">
-          <input flex name="estado" id="email" value="" placeholder="Estado" type="text"/>
-        </div>
-        <div layout="row" flex="15" flex-xs="45" flex-md="45">
-          <input flex name="ciudad" id="email" value="" placeholder="Ciudad" type="text"/>
-        </div>
-        <div layout="row" flex="15" flex-xs="45" flex-md="45">
-          <input flexname="telefono" id="email" value="" placeholder="Teléfono" type="text"/>
-        </div>
+        <md-input-container md-no-float layout="row" flex="15" flex-xs="45" flex-md="45">
+          <input flex name="state" id="state" value="" placeholder="Estado" type="text" ng-model="$ctrl.contact.state"/>
+        </md-input-container>
+        <md-input-container md-no-float layout="row" flex="15" flex-xs="45" flex-md="45">
+          <input flex name="city" id="city" value="" placeholder="Ciudad" type="text" ng-model="$ctrl.contact.city"/>
+        </md-input-container>
+        <md-input-container md-no-float layout="row" flex="15" flex-xs="45" flex-md="45">
+          <input flex name="phone" id="phone" placeholder="Teléfono" type="number" ng-model="$ctrl.contact.phone"/>
+        </md-input-container>
       </div>
-      <div flex layout="row" layout-md="column"layout-align="center center"  layout-xs="column">
-        <div layout="row" flex="45" flex-xs="45" flex-md="45">
-          <textarea name="message" id="message" placeholder="¿Cuál es tu necesidad?" rows="6"></textarea>
-        </div>
+      <div flex layout="row" layout-md="column" layout-align="center center"  layout-xs="column">
+        <md-input-container md-no-float layout="column" flex="45" flex-xs="45" flex-md="45">
+          <textarea flex name="message" id="message" placeholder="¿Cuál es tu necesidad?" rows="6" maxlength="150" ng-model="$ctrl.contact.message" required></textarea>
+          <div flex ng-messages="$ctrl.userForm.message.$error">
+            <div ng-message="required">Campo requerido</div>
+          </div>
+        </md-input-container>
       </div>
       <div layout="row" layout-align="center center" layout-padding layout-margin>
         <ul class="actions">
-          <li><input value="ENVIAR" class="button medium bebas-content" type="button"></li>
-          </ul>
+          <li><input value="ENVIAR" class="button medium bebas-content" type="button" ng-click="$ctrl.sendEmail()" ng-disabled="!$ctrl.userForm.$valid"></li>
+        </ul>
       </div>
-    </div>-->
-
+    </form>
+  </div>
 </div>

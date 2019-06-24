@@ -81,7 +81,7 @@
                               type:'profile',
                               author: {
                                 name: 'Omar Villaseñor',
-                                image: '',
+                                image: 'team/Omar-2.jpg',
                                 position: 'Director Creativo',
                                 twitter: '@omarvzayas'
                               },
@@ -99,7 +99,7 @@
                               type:'profile',
                               author: {
                                 name: 'Gabriela Sánchez',
-                                image: '',
+                                image: 'team/Gaby-2.jpg',
                                 position: 'Directora de marketing y estrategia',
                                 twitter: '@soyabbys'
                               },
@@ -117,7 +117,7 @@
                               type:'profile',
                               author: {
                                 name: 'Angélica García',
-                                image: '',
+                                image: 'team/Ere-2.jpg',
                                 position: 'Directora de contenidos',
                                 twitter: '@aegahe'
                               },
@@ -137,7 +137,7 @@
                               type:'profile',
                               author: {
                                 name: 'Samuel García',
-                                image: '',
+                                image: 'team/Sam-2.jpg',
                                 position: 'Director de arte',
                                 twitter: '@soymrsam'
                               },
@@ -155,7 +155,7 @@
                               type:'profile',
                               author: {
                                 name: 'Sandra Herrera',
-                                image: '',
+                                image: 'team/San-2.jpg',
                                 position: 'Directora de imagen y relaciones públicas',
                                 twitter: '@sanhm22'
                               },
@@ -166,7 +166,7 @@
                           title: '',
                           class: 'content-column',
                           centered: false,
-                          content: [{
+                          content: [/*{
                               elementType: 'card',
                               cardContentClass: 'perfil-card',
                               class: 'justified',
@@ -178,7 +178,7 @@
                                 twitter: '@jerrydevmx'
                               },
                               text: 'Ing. en Sistemas. Desarrollador de Software, especializado en tecnologías web. Amante de los deportes, los viajes, la guitarra y cualquier otro instrumento musical.'
-                          }]
+                          }*/]
                       }]
                     }
                   ],

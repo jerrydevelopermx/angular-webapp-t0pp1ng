@@ -12,6 +12,7 @@
           vm.post;
           vm.relatedPosts;
           vm.topPosts;
+          var monthsES = ['Enero', 'Febrero', 'Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
           vm.$onInit = function(){
             anchorScroll();
@@ -19,10 +20,16 @@
             getTopPosts();
           }
 
+          function dateFormat(date){
+            var splitted = date.split('-');
+            return splitted[2] + '/' + monthsES[Number(splitted[1])-1] + '/' + splitted[0];
+          }
+
           function getData(){
             Requester.get('blog/post/' + $stateParams.post_id, {}).then(function(data){
               getRelatedPosts(data[0].category_id);
               vm.post = data;
+              vm.fDate = dateFormat(data[0].date);
             }, function(){
 
             });
