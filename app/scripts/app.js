@@ -20,7 +20,7 @@ angular
 
 
 .constant('APP',{
-  'api_url' : 'http://toppingcreativo.com.mx/topping-api/index.php/'//'http://localhost/topping-api/index.php/' 
+  'api_url' : 'http://toppingcreativo.com.mx/topping-api/index.php/'//'http://localhost/topping-api/index.php/'
 })
 
 /*

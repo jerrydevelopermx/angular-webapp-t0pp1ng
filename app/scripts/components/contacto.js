@@ -12,6 +12,7 @@
 
       function componentController($scope, Requester){
         var vm = this;
+        vm.emailSent = false;
         vm.contact;
         vm.$onInit = function(){
           //console.log($compile('<app-location></app-location>')(vm))
@@ -36,9 +37,8 @@
         }
 
         vm.sendEmail = function() {
-          console.log(vm.contact);
           Requester.post('site/email', vm.contact).then(function(data){
-            console.log(data)
+            vm.emailSent = true;
           }, function(){
 
           });
