@@ -16,6 +16,7 @@
 
           vm.$onInit = function(){
             anchorScroll();
+            updateVisitorCount()
             getData();
             getTopPosts();
           }
@@ -34,7 +35,13 @@
 
             });
           }
+          function updateVisitorCount(){
+            Requester.post('blog/visits/' , { 'post_id' : $stateParams.post_id }).then(function(data){
+              //console.log(data);
+            }, function(){
 
+            });
+          }
           function getRelatedPosts(category_id){
             Requester.get('blog/posts/' + category_id, {}).then(function(data){
               vm.relatedPosts = data;
