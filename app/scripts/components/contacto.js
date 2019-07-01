@@ -15,7 +15,6 @@
         vm.emailSent = false;
         vm.contact;
         vm.$onInit = function(){
-          //console.log($compile('<app-location></app-location>')(vm))
           vm.contacto = {
             class: 'content-column',
             title: null,
@@ -36,7 +35,7 @@
           };
         }
 
-        vm.sendEmail = function() {
+        vm.sendEmail = function() { console.log(vm.contact)
           Requester.post('site/email', vm.contact).then(function(data){
             vm.emailSent = true;
           }, function(){

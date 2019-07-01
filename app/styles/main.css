@@ -944,6 +944,7 @@ md-input-container {
 
 md-input-container .md-input {
   background: rgba(0,0,0, 0.075);
+  padding: 13px;
 }
 .posts img{
   text-align: center;

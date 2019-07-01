@@ -15,7 +15,8 @@ angular
       'ngMessages',
       'nemLogging',
       'ngSanitize',
-      'slickCarousel'
+      'slickCarousel',
+      'vcRecaptcha'
   ])
 
 
