@@ -35,7 +35,7 @@
           };
         }
 
-        vm.sendEmail = function() { console.log(vm.contact)
+        vm.sendEmail = function() {
           Requester.post('site/email', vm.contact).then(function(data){
             vm.emailSent = true;
           }, function(){
