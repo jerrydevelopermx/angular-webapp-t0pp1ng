@@ -38,7 +38,7 @@
       <div class="post-content" ng-if="post.content" ng-bind-html="post.content"></div>
       <img class="post-img" ng-if="post.image" ng-src="images/{{post.image}}" width="95%" />
     </div>
-    <div ng-if="$ctrl.relatedPosts.length > 1" class="post-bottom">
+    <div ng-if="$ctrl.relatedPosts.length > 0" class="post-bottom">
       <h3>TAMBIÉN TE PUEDE INTERESAR:</h3>
       <ul>
         <li ng-if="related.post_id != $ctrl.post[0].post_id" ng-repeat="related in $ctrl.relatedPosts"> <a href="#!/blog/post/{{related.post_id}}"> - {{related.title}}</a></li>
