@@ -43,7 +43,7 @@
             });
           }
           function getRelatedPosts(category_id){
-            Requester.get('blog/postspreview/' + category_id, {}).then(function(data){
+            Requester.get('blog/posts/' + category_id, {}).then(function(data){
               vm.relatedPosts = data;
             }, function(){
 
@@ -51,7 +51,7 @@
           }
 
           function getTopPosts(){
-            Requester.get('blog/postspreview/top', {}).then(function(data){
+            Requester.get('blog/posts/top', {}).then(function(data){
               vm.topPosts = data;
             }, function(){
 
