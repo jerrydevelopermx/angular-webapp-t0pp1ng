@@ -6,8 +6,10 @@
       </div>
       <div style="text-align: center; font-weight: bold">{{$ctrl.post[0].auth_name}}</div>
       <div style="text-align: center">
-        <img style="width:15px" src="images/iconos/twitter-icon.png" class=""/>
-        @{{$ctrl.post[0].auth_twitter}}
+        <a target="_blank" class="twitter-user-link" href="http://www.twitter.com/{{$ctrl.post[0].auth_twitter}}">
+          <img style="width:15px" src="images/iconos/twitter-icon.png" />
+          @{{$ctrl.post[0].auth_twitter}}
+        </a>
       </div>
     </div>
   </div>
@@ -24,7 +26,7 @@
         <div style="text-align: center; font-weight: bold">{{$ctrl.post[0].auth_name}}</div>
         <div style="text-align: center">
           <img style="width:15px" src="images/iconos/twitter-icon.png" class=""/>
-          @{{$ctrl.post[0].auth_twitter}}
+          <a target="_blank" class="twitter-user-link" href="http://www.twitter.com/{{$ctrl.post[0].auth_twitter}}">@{{$ctrl.post[0].auth_twitter}}</a>
         </div>
       </div>
     </div>

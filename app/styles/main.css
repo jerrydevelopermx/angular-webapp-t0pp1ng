@@ -967,6 +967,14 @@ md-input-container .md-input {
   color: rgba(0,0,0,0.87);
 }
 
+a.twitter-user-link {
+  color: rgba(0,0,0,0.87) !important;
+}
+
+a:hover.twitter-user-link {
+  color: #E5155F !important;
+}
+
 .post-content a:hover {
   color: rgba(0,0,0,0.87);
 }
