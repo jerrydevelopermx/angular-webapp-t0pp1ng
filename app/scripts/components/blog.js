@@ -23,7 +23,7 @@
           }
 
           function getData(){
-            Requester.get('blog/posts/', {}).then(function(data){
+            Requester.get('blog/postspreview/', {}).then(function(data){
               vm.posts.rows = formatData(data);
             }, function(){
 
