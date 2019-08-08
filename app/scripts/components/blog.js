@@ -23,7 +23,7 @@
           }
 
           function getData(){
-            Requester.get('blog/posts/', {}).then(function(data){
+            Requester.get('blog/postspreview/', {}).then(function(data){
               vm.posts.rows = formatData(data);
             }, function(){
 
@@ -35,7 +35,7 @@
             var column;
             var row = {columns: []};
             var counter = 0;
-            for(var i = 0; i < 4; i++){
+            for(var i = 0; i < Math.ceil((data.length/4)) * 4; i++){
               if(data[i] != undefined){
                 column = {
                     title: '',
@@ -61,10 +61,10 @@
                       content: []
                     };
                 }
-                row.columns.push(column);
 
-                if(i == 3){
-                  rows.push(row);
+                row.columns.push(column)
+                if(row.columns.length == 4){
+                  rows.push(row)
                   row = {columns: []};
                 }
             }
