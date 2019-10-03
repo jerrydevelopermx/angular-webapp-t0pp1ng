@@ -504,7 +504,7 @@ body:after {
 
     .post-content ul li {
       margin:10px;
-      font-weight: bold;
+      /*font-weight: bold;*/
     }
 }
 
@@ -930,12 +930,19 @@ body:after {
     }
     .post-content ul li {
       margin:5px;
-      font-weight: bold;
+      /*font-weight: bold;*/
     }
 }
 
 
-
+ol {
+  padding: 10px;
+}
+ol li {
+  padding: 5px;
+  margin-left: 35px;
+  text-align: left;
+}
 
 
 md-input-container {
