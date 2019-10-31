@@ -935,6 +935,11 @@ body:after {
 }
 
 
+ q.enfasis {
+  font-weight: bolder;
+  font-style: italic;
+  word-wrap: break-word;
+}
 ol {
   padding: 10px;
 }
